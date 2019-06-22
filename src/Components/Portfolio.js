@@ -42,7 +42,8 @@ export const Portfolio = () => {
       <h1>Portfolio</h1>
       {projects.map(project => (
         <div className='portfolioItem'>
-          <h3>{project.name}<a href={project.github} target="_blank"><img src='GitHub-Mark-120px-plus.png' className='logo'/></a></h3>
+          <h2>{project.name}</h2>
+          <a href={project.github} target="_blank"><img src='GitHub-Mark-120px-plus.png' className='logo'/></a>
           {project.youtube ?
             <iframe src={project.youtube} frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             : null

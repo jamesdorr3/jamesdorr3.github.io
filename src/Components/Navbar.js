@@ -13,6 +13,7 @@ export const Navbar = (props) => {
   return(
     <div className='navbar'>
       <div>James Dorr</div>
+      <NavLink to='/' exact activeStyle={{background:'darkblue'}}>Portfolio</NavLink>
       {makeLis()}
     </div>
   )
