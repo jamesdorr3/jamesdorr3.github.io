@@ -59,12 +59,13 @@ div.socialMedia{text-align:center}
 background: blue; 
 }
 
-.parallax{height:300px;background-attachment:fixed;background-position:center;background-repeat:no-repeat;background-size:100%}
-.coach{background-image:url("./coach.jpg")}
+.parallax{height:300px;background-attachment:fixed;background-position:center;background-repeat:no-repeat;background-size:100%;}
+.coach{background-image:url("./coach.jpg");}
 .chongqing{background-image:url("./chongqing.png")}
 .volleyball{background-image:url("./volleyball.png")}
 
 /* NON-PHONE */
 @media only screen and (min-width: 450px){
-.resume iframe{width:100%;left:0;right:0;height:100%;position:absolute}
+.resume iframe{width:100%;max-width:800px;margin:auto;left:0;right:0;height:100%;position:absolute}
+.parallax{background-size:50%}
 }
