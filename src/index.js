@@ -9,6 +9,7 @@ import {About} from './Components/About'
 import {Portfolio} from './Components/Portfolio'
 import {Home} from './Components/Home'
 import {Contact} from './Components/Contact'
+import Test from './Components/ScrollProgressBar'
 
 const Routes = ['Resume','About','Contact']
 
