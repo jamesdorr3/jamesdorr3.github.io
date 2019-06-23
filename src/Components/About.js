@@ -5,7 +5,6 @@ export const About = () => {
   return(
     <div className='about'>
       <h1>About</h1>
-      < ScrollProgressBar />
       <h3>Professional</h3>
       <div className='parallax coach' />
       <p>
