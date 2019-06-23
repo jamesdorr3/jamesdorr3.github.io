@@ -14,14 +14,19 @@ code {
 .body{position:absolute;width:100%;overflow-x:hidden;top:8%;height:92%}
 .body h1{position:relative}
 .navbar{position:fixed;top:0;width:100%;height:8%;display:grid;grid-template-columns:1.5fr repeat(4,1fr)}
-.navbar div,.navbar a{text-align:center;font-size:1.1em;padding-top:20%}
+.navbar div,.navbar a{text-align:center;font-size:1.1em;padding-top:15%}
 .navbar a{color:white;background:blue;text-decoration:none;}
+.about{padding:0 1%}
 .portfolioItem{position:relative}
 .portfolioItem iframe{position:relative;width:100%;height:calc(200%)}
 .portfolioItem .logo{height:2em;position:absolute;right:0px;top:0px}
 .resume iframe{width:149%;left:-25%;right:-25%;height:100%;position:absolute}
 div.socialMedia{text-align:center}
 .contact a img{position:relative;height:100px;margin:3%}
+
+.sideScroll{background:lime;width:100%;overflow:scroll;white-space:nowrap;scroll-snap-type:x mandatory;}
+.portfolioItem{background:pink;display:inline-block;width:100%;position:relative;top:0%;scroll-snap-align:start;}
+
 /* NON-PHONE */
 @media only screen and (min-width: 450px){
 .resume iframe{width:100%;left:0;right:0;height:100%;position:absolute}

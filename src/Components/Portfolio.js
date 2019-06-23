@@ -40,22 +40,24 @@ export const Portfolio = () => {
   return(
     <div className='portfolio'>
       <h1>Portfolio</h1>
-      {projects.map(project => (
-        <div className='portfolioItem'>
-          <h2>{project.name}</h2>
-          <a href={project.github} target="_blank"><img src='GitHub-Mark-120px-plus.png' className='logo'/></a>
-          {project.youtube ?
-            <iframe src={project.youtube} frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            : null
-          }
-          <p>{project.description}</p>
-          <ul>
-            {project.bullets.map(bullet => (
-              <li>{bullet}</li>
-            ))}
-          </ul>
-        </div>
-      ))}
+      <div className='sideScroll'>
+        {projects.map(project => (
+          <section className='portfolioItem'>
+            <h2>{project.name}</h2>
+            <a href={project.github} target="_blank"><img src='GitHub-Mark-120px-plus.png' className='logo'/></a>
+            {project.youtube ?
+              <iframe src={project.youtube} frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              : null
+            }
+            <p>{project.description}</p>
+            <ul>
+              {project.bullets.map(bullet => (
+                <li>{bullet}</li>
+              ))}
+            </ul>
+          </section>
+        ))}
+      </div>
     </div>
   )
 }
