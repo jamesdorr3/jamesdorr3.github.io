@@ -7,31 +7,25 @@ import {Navbar} from './Components/Navbar'
 import {Resume} from './Components/Resume'
 import {About} from './Components/About'
 import {Portfolio} from './Components/Portfolio'
+import {Home} from './Components/Home'
+import {Contact} from './Components/Contact'
+import Test from './Components/ScrollProgressBar'
 
-const Home = () => {
-  return (
-    <div>
-      <h1>Home!</h1>
-    </div>
-  );
-};
+const Routes = ['Resume','About','Contact']
 
-const Contact = () => {
-  return (
-    <div>CONTACT</div>
-  )
+const clickContact = () => {
+  console.log('CONTACT!')
 }
-
-const Routes = ['Home','About','Portfolio','Resume','Contact']
 
 ReactDOM.render((
   <Router>
     <Navbar routes={Routes}/>
-    <Route exact path="/(home)?" render={Home} />
-    <Route exact path='/about' render={About} />
-    <Route exact path='/portfolio' render={Portfolio} />
-    <Route exact path='/resume' render={Resume} />
-    <Route exact path='/contact' render={Contact} />
+    <div className='body'>
+      <Route exact path={'/'} render={Portfolio} />
+      <Route exact path='/resume' render={Resume} />
+      <Route exact path='/about' render={About} />
+      <Route exact path='/contact' render={Contact}/>
+    </div>
   </Router>),
   document.getElementById('root')
 );

@@ -1,5 +1,4 @@
-body {
-  margin: 0;
+body {margin:0 0;width:100%;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
@@ -10,4 +9,62 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+h1{margin-left:3%}
+.scroll-progress-container{width:100%;height:8px;background:lime}
+.scroll-progress-bar{height:8px;background:pink;width:10%}
+
+.body{position:absolute;width:100%;overflow-x:hidden;top:8%;height:92%}
+.navbar{position:fixed;top:0;width:100%;height:8%;display:grid;grid-template-columns:1.5fr repeat(4,1fr)}
+.navbar div{font-size:1.5em;padding-left:4%}
+.navbar a{text-align:center;font-size:1.1em;padding-top:15%}
+.navbar a{color:white;background:blue;text-decoration:none;}
+
+.about{padding:0}
+.about p{text-align:justify}
+.about p,.about h3{margin:5% 3%}
+
+.contact p{margin-left:3%;}
+
+.resume iframe{width:149%;left:-25%;right:-25%;height:100%;position:absolute}
+div.socialMedia{text-align:center}
+.contact a img{position:relative;height:100px;margin:3%}
+
+.sideScroll{height:85%;width:100%;overflow-x:scroll;overflow-y:hidden;position:absolute;white-space:nowrap;scroll-snap-type:x mandatory;padding:0;margin:0}
+.portfolioItem{display:inline-block;width:90%;height:100%;scroll-snap-align:center;white-space:normal;vertical-align:top;margin:0 1%;transition:transform .5s;}
+.portfolioItem:hover{transform:scale(1.01);transition:transform .5s;}
+.portfolioItem h2,.portfolioItem p{padding:0 1%}
+.portfolioItem iframe{position:relative;width:100%;}
+.portfolioItem .logo{height:2em;position:relative;float:right;padding:2%}
+
+/* Let's get this party started */
+.sideScroll::-webkit-scrollbar {height:10%;}
+
+/* Track */
+.sideScroll::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+  -webkit-border-radius: 25px;
+  border-radius: 25px;background:transparent
+}
+
+/* Handle */
+.sideScroll::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 25px;
+  border-radius: 25px;
+  background: rgb(69, 69, 255); 
+  box-shadow: 0 0 6px rgba(0,0,0,0.5); 
+}
+.sideScroll::-webkit-scrollbar-thumb:window-inactive {
+background: blue; 
+}
+
+.parallax{height:300px;background-attachment:fixed;background-position:center;background-repeat:no-repeat;background-size:100%}
+.coach{background-image:url("./coach.jpg")}
+.chongqing{background-image:url("./chongqing.png")}
+.volleyball{background-image:url("./volleyball.png")}
+
+/* NON-PHONE */
+@media only screen and (min-width: 450px){
+.resume iframe{width:100%;left:0;right:0;height:100%;position:absolute}
 }
