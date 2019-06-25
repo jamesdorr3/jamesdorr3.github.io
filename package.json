@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "flickity": "^2.2.0",
+    "gh-pages": "^2.0.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-router-dom": "^5.0.1",
@@ -13,7 +14,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -32,5 +35,6 @@
   },
   "devDependencies": {
     "@babel/preset-env": "^7.4.5"
-  }
+  },
+  "homepage": "https://jamesdorr3.github.io"
 }
