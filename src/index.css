@@ -15,8 +15,8 @@ h1{margin-left:3%}
 .scroll-progress-container{width:100%;height:8px;background:lime}
 .scroll-progress-bar{height:8px;background:pink;width:10%}
 
-.body{position:absolute;width:100%;overflow-x:hidden;top:8%;bottom:8%}
-.navbar{position:fixed;top:0;width:100%;height:8%;display:grid;grid-template-columns:1.5fr repeat(4,1fr)}
+.body{position:absolute;width:100%;overflow-x:hidden;top:8%;bottom:0%}
+.navbar{position:fixed;top:0;width:100%;height:8%;display:grid;grid-template-columns:repeat(5,1fr)}
 .navbar div{font-size:1.5em;padding-left:4%}
 /* .full{background:pink}
 .full .name{display:inline-block;visibility:hidden;font-size:0px}
@@ -25,32 +25,45 @@ h1{margin-left:3%}
 .navbar a{color:white;background:blue;text-decoration:none;}
 
 /* ENTRANCE */
-.fullNameContainer1{position:fixed;height:50%;width:100%;background:pink;font-size:2em;}
-.fullNameContainer1 .full{background:lime;position:absolute;bottom:10%;left:5%;width:200%}
+.fullNameContainer1{position:fixed;height:50%;width:100%;background:white;font-size:2em;}
+.fullNameContainer1 .full{background:white;position:absolute;bottom:10%;left:5%;width:200%}
 .fullNameContainer1 .full .name{position:relative;margin-right:0.25%;left:100%}
-.fullNameContainer1 .full .first{animation: slide 1s ease 0s forwards}
-.fullNameContainer1 .full .middle{animation: slide 1s ease 0.5s forwards}
-.fullNameContainer1 .full .last{animation:slide 1s ease 1s forwards}
-.fullNameContainer1 .full .suffix{animation:slide 1s ease 1.5s forwards}
+.fullNameContainer1 .full .first{animation: slide 1s ease 0.5s forwards}
+.fullNameContainer1 .full .middle{animation: slide 1s ease 1s forwards}
+.fullNameContainer1 .full .last{animation:slide 1s ease 1.5s forwards}
+.fullNameContainer1 .full .suffix{animation:slide 1s ease 2s forwards}
 /* .fullNameContainer1 .full .rest:after{content:' '} */
 
 .footerContainer1{background:blue;bottom:0;position:fixed;margin:0;width:100%;height:50%;}
-.footerContainer1 .footer{background:pink;width:200%;list-style:none;font-size:1.5em;position:absolute;padding:0;left:5%}
+.footerContainer1 .footer{background:blue;color:white;width:200%;list-style:none;font-size:1.5em;position:absolute;padding:0;left:5%}
 .footerContainer1 .footer li{padding:1% 0;position:relative;left:100%}
-.footer li.li0{animation: slide 1s ease 0s forwards}
-.footer li.li1{animation: slide 1s ease 0.5s forwards}
-.footer li.li2{animation: slide 1s ease 1s forwards}
-.footer li.li3{animation: slide 1s ease 1.5s forwards}
+.footer li.li0{animation: slide 1s ease 0.5s forwards}
+.footer li.li1{animation: slide 1s ease 1s forwards}
+.footer li.li2{animation: slide 1s ease 1.5s forwards}
+.footer li.li3{animation: slide 1s ease 2s forwards}
 
 @keyframes hide{from{visibility:hidden}to{visibility:hidden}}
 @keyframes slide{from{left:100%;}to{left:0%;position:relative}}
+
+.fullNameContainer1 .full .rest{animation:shrink 1s ease 4s forwards}
+
+@keyframes shrink{to{font-size:0px;display:none}}
+
+.fullNameContainer1{animation:shrinkHeader 1s ease 5s forwards}
+.fullNameContainer1 .full{animation:shrinkHeaderName 1s ease 4.5s forwards}
+
+@keyframes shrinkHeader{to{height:8%;width:20%}}
+@keyframes shrinkHeaderName{to{width:90%}}
+
+.footerContainer1{animation:shrinkFooterContainer 1s ease 5s forwards}
+
+@keyframes shrinkFooterContainer{to{height:0%}}
 
 /* ENTRANCE */
 
 .about{padding:0}
 .about p{text-align:justify}
 .about p,.about h3{margin:5% 3%}
-
 .contact p{margin-left:3%;}
 
 .resume iframe{width:149%;left:-25%;right:-25%;height:100%;position:absolute}
