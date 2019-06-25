@@ -10,6 +10,7 @@ import {Portfolio} from './Components/Portfolio'
 import {Home} from './Components/Home'
 import {Contact} from './Components/Contact'
 import Test from './Components/ScrollProgressBar'
+import {Footer} from './Components/Footer'
 
 const Routes = ['Resume','About','Contact']
 
@@ -26,6 +27,7 @@ ReactDOM.render((
       <Route exact path='/about' render={About} />
       <Route exact path='/contact' render={Contact}/>
     </div>
+    <Footer />
   </Router>),
   document.getElementById('root')
 );
