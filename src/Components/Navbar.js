@@ -11,7 +11,7 @@ export class Navbar extends Component {
   render(){
     return(
       <div className='navbar'>
-        <div>James Dorr</div>
+        <div></div>
         <NavLink to='/' exact activeStyle={{background:'darkblue'}}>Portfolio</NavLink>
         {this.makeLis()}
       </div>

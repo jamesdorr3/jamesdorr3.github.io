@@ -7,6 +7,7 @@ export const Portfolio = () => {
       name: 'HAM',
       youtube: 'https://www.youtube.com/embed/UA1FnsuSpDs',
       github: 'https://github.com/jamesdorr3/frontend-ham',
+      heroku: 'https://hamon.herokuapp.com/',
       description: 'A macronutrient tracker to be edited easily and show in-depth information on one page',
       bullets: [
         "Ruby on Rails, RESTful routes, and PostgreSQL to simplify backend relationships and API calls",
@@ -45,6 +46,7 @@ export const Portfolio = () => {
         {projects.map(project => (
           <div className='portfolioItem'>
             <a href={project.github} target="_blank"><img src='GitHub-Mark-120px-plus.png' className='logo'/></a>
+            {project.heroku ? <a href={project.heroku} target="_blank"><img src='heroku.png' className='logo'/></a> : null}
             <h2>{project.name}</h2>
             {project.youtube ?
               <iframe src={project.youtube} frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
