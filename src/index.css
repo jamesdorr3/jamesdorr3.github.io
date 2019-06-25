@@ -11,7 +11,7 @@ code {
     monospace;
 }
 
-h1{margin-left:3%}
+h1{margin:3%}
 .scroll-progress-container{width:100%;height:8px;background:lime}
 .scroll-progress-bar{height:8px;background:pink;width:10%}
 
@@ -61,7 +61,7 @@ h1{margin-left:3%}
 
 /* ENTRANCE */
 
-.about{padding:0}
+.about{padding:0;}
 .about p{text-align:justify}
 .about p,.about h3{margin:5% 3%}
 .contact p{margin-left:3%;}
@@ -101,7 +101,7 @@ background: blue;
 .parallax{height:300px;background-attachment:fixed;background-position:center;background-repeat:no-repeat;background-size:100%;}
 .coach{background-image:url("./coach.jpg");}
 .chongqing{background-image:url("./chongqing.png")}
-.volleyball{background-image:url("./volleyball.png")}
+.volleyball{background-image:url("./volleyball.jpeg")}
 
 /* .footer{background:lime;width:100%;position:absolute;height:8%;bottom:0;display:grid;grid-template-columns:repeat(4,1fr);padding:0;margin:0}
 .footer li{list-style:none;text-align:center} */
