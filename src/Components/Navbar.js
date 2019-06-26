@@ -5,14 +5,14 @@ export class Navbar extends Component {
 
   makeLis = () => {
     return this.props.routes.map(route => (
-      <NavLink to={`/${route.toLowerCase()}`} exact activeStyle={{background:'darkblue'}}>{route}</NavLink>
+      <NavLink to={`/${route.toLowerCase()}`} exact activeClassName='active'><span>{route}</span></NavLink>
     ))
   }
   render(){
     return(
       <div className='navbar'>
         <div></div>
-        <NavLink to='/' exact activeStyle={{background:'darkblue'}}>Portfolio</NavLink>
+        <NavLink to='/' exact activeClassName='active'><span>Portfolio</span></NavLink>
         {this.makeLis()}
       </div>
     )
