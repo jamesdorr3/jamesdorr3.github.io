@@ -51,13 +51,13 @@ h1{margin:3%}
 
 @keyframes shrink{to{font-size:0px;display:none}}
 
-.fullNameContainer{animation:shrinkHeader 1s ease 5s forwards}
+.fullNameContainer{animation:shrinkHeader 1s ease 0s forwards}
 .fullNameContainer .full{animation:shrinkHeaderName 1s ease 4.5s forwards;background:none}
 
 @keyframes shrinkHeader{to{height:8%;width:20%}}
 @keyframes shrinkHeaderName{to{width:90%}}
 
-.footerContainer{animation:shrinkFooterContainer 1s ease 5s forwards}
+.footerContainer{animation:shrinkFooterContainer 1s ease 0s forwards}
 
 @keyframes shrinkFooterContainer{to{height:0%}}
 
@@ -73,14 +73,20 @@ div.socialMedia{text-align:center}
 .contact a img{position:relative;height:100px;margin:3%}
 
 .sideScroll{height:85%;width:100%;overflow-x:scroll;overflow-y:hidden;position:absolute;white-space:nowrap;scroll-snap-type:x mandatory;padding:0;margin:0;bottom:0}
-.portfolioItem{display:inline-block;width:90%;height:98%;scroll-snap-align:center;white-space:normal;vertical-align:top;margin:1%;transition:transform .5s;overflow-y:scroll;border:1px solid black;transition:1s;border-radius:5px}
+.portfolioItem{position:relative;display:inline-block;width:90%;height:98%;scroll-snap-align:center;white-space:normal;vertical-align:top;margin:1%;transition:transform .5s;overflow-y:scroll;border:1px solid black;transition:1s;border-radius:5px}
 .portfolioItem:hover{transform:scale(1.01);border:1px solid black;transition:0.5s}
 
-.portfolioItem .links{background:lime;}
-.portfolioItem h2,.portfolioItem p{padding:2% 1%;margin:0}
+.portfolioItem h2{display:inline-block;top:0%;margin:3%}
 .portfolioItem p{padding:1% 1%;margin:0}
 .portfolioItem iframe{position:relative;width:100%;max-width:600px;height:38%}
-.portfolioItem .logo{height:2em;position:relative;float:right;padding:2%}
+
+.portfolioItem .links{border:1px solid black;display:inline-block;float:right}
+.portfolioItem .linkCard:not(:first-child){display:none}
+.portfolioItem .links:hover .linkCard:not(:first-child){display:block;}
+.portfolioItem .links:hover{z-index:1;background:lime}
+.portfolioItem .linkCard div p{float:left;font-size:1.5em}
+.portfolioItem .linkCard p{color:black;display:inline-block;font-size:0.6em}
+.portfolioItem .logo{width:2em;display:inline-block;float:right;}
 
 /* Let's get this party started */
 .sideScroll::-webkit-scrollbar {height:10%;}
