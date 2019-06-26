@@ -1,9 +1,20 @@
 import React from 'react'
 
+const handleClick = () => {
+  const nameContainer = document.querySelector('.fullNameContainer')
+  const footerContainer = document.querySelector('.footerContainer')
+  nameContainer.classList.remove('fullNameContainer')
+  footerContainer.classList.remove('footerContainer')
+  void nameContainer.offsetWidth;
+  void footerContainer.offsetWidth;
+  nameContainer.classList.add('fullNameContainer')
+  footerContainer.classList.add('footerContainer')
+}
+
 export const Footer = () => {
   return(
     <>
-      <div className='fullNameContainer1'>
+      <div onClick={handleClick} innerRef='fullNameContainer' className='fullNameContainer'>
         <div className='full name'>
           <span className='first name'>
             <span className='firstLetter'>J</span>
@@ -23,7 +34,7 @@ export const Footer = () => {
           </span>
         </div>
       </div>
-      <div className='footerContainer1'>
+      <div className='footerContainer' innerRef='footerContainer'>
         <ul className='footer'>
           {['React','Ruby on Rails','Redux','JavaScript'].map((x, i) => (
           <li className={'li' + (i)}>{x}</li>

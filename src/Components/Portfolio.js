@@ -45,8 +45,10 @@ export const Portfolio = () => {
       <div className='sideScroll'>
         {projects.map(project => (
           <div className='portfolioItem'>
-            <a href={project.github} target="_blank"><img src='GitHub-Mark-120px-plus.png' className='logo'/></a>
-            {project.heroku ? <a href={project.heroku} target="_blank"><img src='heroku.png' className='logo'/></a> : null}
+            <div className='links'>
+              <a href={project.github} target="_blank"><img src='GitHub-Mark-120px-plus.png' className='logo'/></a>
+              {project.heroku ? <a href={project.heroku} target="_blank"><img src='heroku.png' className='logo'/></a> : null}
+            </div>
             <h2>{project.name}</h2>
             {project.youtube ?
               <iframe src={project.youtube} frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
