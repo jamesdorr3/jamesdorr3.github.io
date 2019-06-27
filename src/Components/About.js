@@ -3,7 +3,7 @@ import ScrollProgressBar from './ScrollProgressBar'
 
 export const About = () => {
   return(
-    <div className='about'>
+    <div className='about' id='about'>
       <h1>About</h1>
       <h3>Professional</h3>
       <div className='parallax coach' />

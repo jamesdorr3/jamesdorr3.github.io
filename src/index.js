@@ -12,7 +12,9 @@ import {Contact} from './Components/Contact'
 import Test from './Components/ScrollProgressBar'
 import {Footer} from './Components/Footer'
 
-const Routes = ['Resume','About','Contact']
+import {HashLink as Link} from 'react-router-hash-link'
+
+const Routes = ['Portfolio','Resume','About','Contact']
 
 const clickContact = () => {
   console.log('CONTACT!')
@@ -22,10 +24,10 @@ ReactDOM.render((
   <Router>
     <Navbar routes={Routes}/>
     <div className='body'>
-      <Route exact path={'/'} render={Portfolio} />
-      <Route exact path='/resume' render={Resume} />
-      <Route exact path='/about' render={About} />
-      <Route exact path='/contact' render={Contact}/>
+      <Portfolio />
+      <Resume />
+      <About />
+      <Contact />
     </div>
     <Footer />
   </Router>),

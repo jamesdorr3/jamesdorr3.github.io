@@ -40,7 +40,7 @@ export const Portfolio = () => {
   ]
   
   return(
-    <div className='portfolio'>
+    <div className='portfolio' id='portfolio'>
       <h1 className='title'>Portfolio</h1>
       <div className='sideScroll'>
         {projects.map(project => (

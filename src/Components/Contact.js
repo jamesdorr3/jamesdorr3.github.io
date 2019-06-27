@@ -2,7 +2,7 @@ import React from 'react'
 
 export const Contact = () => {
   return(
-    <div className='contact'>
+    <div className='contact' id='contact'>
       <h1>Contact</h1>
       <p>James Edward Dorr III</p>
       <p><a href='mailto:jamesdorr3@gmail.com'>JamesDorr3@Gmail.com</a></p>
