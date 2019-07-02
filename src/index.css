@@ -13,49 +13,49 @@ code {
 
 h1{margin:3%}
 
-.body{position:absolute;width:100%;overflow-x:hidden;top:8%;height:92%}
-.navbar{position:fixed;top:0;width:100%;height:8%;display:grid;grid-template-columns:repeat(5,1fr);box-shadow: 0px 3px 3px #06AFE3;background:rgb(0, 195, 255)}
+.body{position:absolute;width:100%;overflow-x:hidden;top:3%;height:97%;background:black;color:white}
+.navbar{position:fixed;top:0;width:100%;height:5%;display:grid;grid-template-columns:repeat(5,1fr);background-image:linear-gradient(black, black,black,black,transparent);z-index:1}
 
-.navbar a{position:relative;font-size:0.9em;color:black;text-decoration:none;width:100%;transition:1s}
+.navbar a{position:relative;font-size:0.9em;color:white;text-decoration:none;width:100%;transition:1s}
 .navbar a span{position:absolute;bottom:33%;width:100%;height:40%;text-align:center;transition:1s}
 
 /* .navbar a:hover,.navbar a.active:hover{background:linear-gradient(gray,#06AFE3,#06AFE3);transition:1s} */
-.navbar a:hover{background:linear-gradient(to right,transparent,rgba(255, 255, 255, 0.336),rgba(255, 255, 255, 0.336),transparent);transition:1s}
-.navbar a:hover span{bottom:21.5%;font-size:1em;transition:1s}
+.navbar a:hover,.navbar a.active{box-shadow: 0px 3px 3px -2px #06AFE3;transition:1s}
+.navbar a:hover span,.navbar a.active span{font-weight:bold;transition:1s}
 /* .navbar a.active:hover span{bottom:21.5%;font-size:1em;transition:1s} */
 
 /* .navbar a.active{background:linear-gradient(gray,gray,#06AFE3);font-weight:bold;transition:1s} */
-.navbar a.active span{bottom:15%;font-size:1em;font-weight:bold;transition:1s}
 
 /* ENTRANCE */
-.fullNameContainer{position:fixed;height:50%;width:100%;background:white;font-size:2em;}
+.fullNameContainer{position:fixed;height:50%;width:100%;background:white;font-size:2em;z-index:1}
 .fullNameContainer .full{background:white;position:absolute;bottom:10%;left:5%;width:200%;font-size:0.9em}
-.fullNameContainer .full .name{position:relative;margin-right:0.25%;left:100%}
-.fullNameContainer .full .first{animation: slide 1s ease 0.5s forwards}
-.fullNameContainer .full .middle{animation: slide 1s ease 1s forwards}
-.fullNameContainer .full .last{animation:slide 1s ease 1.5s forwards}
-.fullNameContainer .full .suffix{animation:slide 1s ease 2s forwards}
+.fullNameContainer .full .name{position:relative;margin-right:0.25%;background:none}
+.fullNameContainer .full .name span{color:#06AFE3;background:none}
+.fullNameContainer .full .first{left:100%;animation: slide 1s ease 0.5s forwards}
+.fullNameContainer .full .middle{left:90%;animation: slide 1s ease 1s forwards}
+.fullNameContainer .full .last{left:70%;animation:slide 1s ease 1.5s forwards}
+.fullNameContainer .full .suffix{left:60%;animation:slide 1s ease 2s forwards}
 
 .footerContainer{background:#06AFE3;bottom:0;position:fixed;margin:0;width:100%;height:50%;}
 .footerContainer .footer{background:#06AFE3;color:white;width:200%;list-style:none;font-size:1.5em;position:absolute;padding:0;left:5%}
-.footerContainer .footer li{padding:1% 0;position:relative;left:100%}
+.footerContainer .footer li{padding:1% 0;position:relative;left:100%;background:none;color:black}
 .footerContainer .footer li.li0{animation: slide 1s ease 0.5s forwards}
 .footerContainer .footer li.li1{animation: slide 1s ease 1s forwards}
 .footerContainer .footer li.li2{animation: slide 1s ease 1.5s forwards}
 .footerContainer .footer li.li3{animation: slide 1s ease 2s forwards}
 
 @keyframes hide{from{visibility:hidden}to{visibility:hidden}}
-@keyframes slide{from{left:100%;}to{left:0%;position:relative}}
+@keyframes slide{to{left:0%;position:relative}}
 
 .fullNameContainer .full .rest{animation:shrink 1s ease 4s forwards}
 
 @keyframes shrink{to{font-size:0px;display:none}}
 
 .fullNameContainer{animation:shrinkHeader 1s ease 5s forwards}
-.fullNameContainer .full{animation:shrinkHeaderName 1s ease 4.5s forwards;background:none}
+.fullNameContainer .full{animation:shrinkHeaderName 1s ease 4.5s forwards;}
 
-@keyframes shrinkHeader{to{height:8%;width:20%}}
-@keyframes shrinkHeaderName{to{width:90%}}
+@keyframes shrinkHeader{to{height:5%;width:20%;background:transparent;z-index:1}}
+@keyframes shrinkHeaderName{to{width:90%;background:transparent}}
 
 .footerContainer{animation:shrinkFooterContainer 1s ease 5s forwards}
 
@@ -63,19 +63,22 @@ h1{margin:3%}
 
 /* ENTRANCE */
 
-.about{padding:0;}
+.about{position:relative;padding-top:5%;}
 .about p{text-align:justify}
 .about p,.about h3{margin:5% 3%}
-.contact{background:lime;position:relative;height:100%}
+.contact{position:relative;height:95%;padding-top:10%}
 .contact p{margin-left:3%;}
 
-.resume{position:relative;height:90%}
-.resume iframe{width:145%;left:-23%;right:-24%;height:90%;position:absolute}
+.resume{position:relative;height:90%;background:white;color:black}
+.resume:before{content:'';position:absolute;width:100%;height:50px;background-image:linear-gradient(white,transparent);top:99.5%}
+.resume:after{content:'';position:absolute;width:100%;height:50px;background-image:linear-gradient(transparent,white);bottom:99.5%}
+/* .resume:before{content:'';width:100%;position:absolute;height: 0;border-style: solid;border-width: 0 0 200px 200px;border-color: transparent transparent white transparent;} */
+.resume iframe{width:145%;left:-23%;right:-24%;height:90%;position:absolute;border:none;margin:none}
 div.socialMedia{text-align:center}
 .contact a img{position:relative;height:100px;margin:3%}
 
 .sideScroll{height:85%;width:100%;overflow-x:scroll;overflow-y:hidden;position:absolute;white-space:nowrap;scroll-snap-type:x mandatory;padding:0;margin:0;bottom:0}
-.portfolio{position:relative;height:90%}
+.portfolio{position:relative;height:85%;padding-top:5%}
 .portfolioItem{position:relative;display:inline-block;width:90%;height:98%;scroll-snap-align:center;white-space:normal;vertical-align:top;margin:1%;transition:transform .5s;overflow-y:scroll;border:1px solid black;transition:1s;border-radius:5px}
 .portfolioItem:hover{transform:scale(1.01);border:1px solid black;transition:0.5s}
 
@@ -122,6 +125,6 @@ background: #06AFE3;
 
 /* NON-PHONE */
 @media only screen and (min-width: 450px){
-.resume iframe{width:100%;max-width:800px;margin:auto;left:0;right:0;height:99%;position:absolute;z-index:0}
+.resume iframe{width:100%;max-width:800px;margin:auto;left:0;right:0;height:90%;position:absolute}
 .parallax{background-size:50%}
 }

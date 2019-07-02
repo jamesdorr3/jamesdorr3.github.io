@@ -59,7 +59,7 @@ export const Portfolio = () => {
                 </div>
               : null}
               <div className='linkCard'>
-                <a href={project.github} target="_blank"><img src='GitHub-Mark-120px-plus.png' className='logo'/></a>
+                <a href={project.github} target="_blank"><img src='GitHub-Mark-Light-120px-plus.png' className='logo'/></a>
               </div>
             </div>
             {project.youtube ?
