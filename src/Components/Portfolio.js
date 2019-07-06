@@ -47,6 +47,15 @@ export const Portfolio = () => {
           <div className='portfolioItem'>
             <h2>{project.name}</h2>
             <div className='links'>
+               <div className='linkCard'>
+                <a href={project.github} target="_blank">
+                  <div>
+                    {/* <p>The code</p> */}
+                    <img src='GitHub-Mark-Light-120px-plus.png' className='logo'/>
+                  </div>
+                  {/* <p> </p> */}
+                </a> 
+              </div>
               {project.heroku ? 
                 <div className='linkCard'>
                   <a href={project.heroku} target="_blank">
@@ -58,9 +67,6 @@ export const Portfolio = () => {
                   </a> 
                 </div>
               : null}
-              <div className='linkCard'>
-                <a href={project.github} target="_blank"><img src='GitHub-Mark-Light-120px-plus.png' className='logo'/></a>
-              </div>
             </div>
             {project.youtube ?
               <iframe src={project.youtube} frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

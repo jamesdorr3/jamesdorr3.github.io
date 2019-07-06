@@ -11,7 +11,7 @@ code {
     monospace;
 }
 
-h1{margin:3%}
+h1{margin:1%}
 
 .body{position:absolute;width:100%;overflow-x:hidden;top:3%;height:97%;background:black;color:white}
 .navbar{position:fixed;top:0;width:100%;height:5%;display:grid;grid-template-columns:repeat(5,1fr);background-image:linear-gradient(black, black,black,black,transparent);z-index:1}
@@ -20,8 +20,8 @@ h1{margin:3%}
 .navbar a span{position:absolute;bottom:33%;width:100%;height:40%;text-align:center;transition:1s}
 
 /* .navbar a:hover,.navbar a.active:hover{background:linear-gradient(gray,#06AFE3,#06AFE3);transition:1s} */
-.navbar a:hover,.navbar a.active{box-shadow: 0px 3px 3px -2px #06AFE3;transition:1s}
-.navbar a:hover span,.navbar a.active span{font-weight:bold;transition:1s}
+.navbar a:hover{box-shadow: 0px 3px 3px -2px #06AFE3;transition:1s}
+.navbar a:hover span{font-weight:bold;transition:1s}
 /* .navbar a.active:hover span{bottom:21.5%;font-size:1em;transition:1s} */
 
 /* .navbar a.active{background:linear-gradient(gray,gray,#06AFE3);font-weight:bold;transition:1s} */
@@ -51,11 +51,14 @@ h1{margin:3%}
 
 @keyframes shrink{to{font-size:0px;display:none}}
 
-.fullNameContainer{animation:shrinkHeader 1s ease 5s forwards}
 .fullNameContainer .full{animation:shrinkHeaderName 1s ease 4.5s forwards;}
+.fullNameContainer{animation:shrinkHeader 2s ease 5s forwards}
 
-@keyframes shrinkHeader{to{height:5%;width:20%;background:transparent;z-index:1}}
-@keyframes shrinkHeaderName{to{width:90%;background:transparent}}
+@keyframes shrinkHeader{
+  25%{background:transparent}
+  100%{height:5%;width:20%;background:transparent;z-index:1;top:-3px}
+}
+@keyframes shrinkHeaderName{to{width:90%;background:transparent;}}
 
 .footerContainer{animation:shrinkFooterContainer 1s ease 5s forwards}
 
@@ -66,33 +69,34 @@ h1{margin:3%}
 .about{position:relative;padding-top:5%;}
 .about p{text-align:justify}
 .about p,.about h3{margin:5% 3%}
+p a{color:white}
 .contact{position:relative;height:95%;padding-top:10%}
 .contact p{margin-left:3%;}
 
-.resume{position:relative;height:90%;background:white;color:black}
-.resume:before{content:'';position:absolute;width:100%;height:50px;background-image:linear-gradient(white,transparent);top:99.5%}
-.resume:after{content:'';position:absolute;width:100%;height:50px;background-image:linear-gradient(transparent,white);bottom:99.5%}
+.resume{position:relative;height:90%;background:white;color:black;}
+/* .resume:before{content:'';position:absolute;width:100%;height:50px;background-image:linear-gradient(white,transparent);top:99.5%}
+.resume:after{content:'';position:absolute;width:100%;height:50px;background-image:linear-gradient(transparent,white);bottom:99.5%} */
 /* .resume:before{content:'';width:100%;position:absolute;height: 0;border-style: solid;border-width: 0 0 200px 200px;border-color: transparent transparent white transparent;} */
-.resume iframe{width:145%;left:-23%;right:-24%;height:90%;position:absolute;border:none;margin:none}
+/* .resume .transition{background:gray;content:'';height:30px;position:relative} */
+.resume iframe{width:145%;left:-23%;right:-24%;height:90%;position:relative;border:none;margin:none}
 div.socialMedia{text-align:center}
 .contact a img{position:relative;height:100px;margin:3%}
 
-.sideScroll{height:85%;width:100%;overflow-x:scroll;overflow-y:hidden;position:absolute;white-space:nowrap;scroll-snap-type:x mandatory;padding:0;margin:0;bottom:0}
-.portfolio{position:relative;height:85%;padding-top:5%}
-.portfolioItem{position:relative;display:inline-block;width:90%;height:98%;scroll-snap-align:center;white-space:normal;vertical-align:top;margin:1%;transition:transform .5s;overflow-y:scroll;border:1px solid black;transition:1s;border-radius:5px}
-.portfolioItem:hover{transform:scale(1.01);border:1px solid black;transition:0.5s}
+.sideScroll{height:85%;width:100%;overflow-x:scroll;overflow-y:hidden;position:relative;white-space:nowrap;scroll-snap-type:x mandatory;padding:0;margin:0;bottom:0;}
+.portfolio{position:relative;height:85%;padding-top:0%}
+.portfolioItem{position:relative;display:inline-block;width:90%;height:95%;scroll-snap-align:center;white-space:normal;vertical-align:top;margin:1%;transition:transform .5s;overflow-y:scroll;border:1px solid black;transition:1s;border-radius:5px;padding:1%}
+.portfolioItem:hover{transform:scale(1.01);border:1px solid white;transition:0.5s}
 
-.portfolioItem h2{display:inline-block;top:0%;margin:3%}
+.portfolioItem h2{display:inline-block;top:0%;margin:3%;}
 .portfolioItem p{padding:1% 1%;margin:0}
-.portfolioItem iframe{position:relative;width:100%;max-width:600px;height:38%}
+.portfolioItem iframe{position:relative;width:100%;max-width:600px;height:38%;}
 
-.portfolioItem .links{border:1px solid black;display:inline-block;float:right}
-.portfolioItem .linkCard:not(:first-child){display:none}
-.portfolioItem .links:hover .linkCard:not(:first-child){display:block;}
-.portfolioItem .links:hover{z-index:1;background:lime}
-.portfolioItem .linkCard div p{float:left;font-size:1.5em}
-.portfolioItem .linkCard p{color:black;display:inline-block;font-size:0.6em}
-.portfolioItem .logo{width:2em;display:inline-block;float:right;}
+.portfolioItem .links{float:right;width:50%}
+.portfolioItem .linkCard{position:relative;float:right;white-space:nowrap;margin:0 3%;transition:0.25s}
+.portfolioItem .linkCard:hover{transform:scale(1.1);transition:0.25s}
+.portfolioItem .linkCard div p{float:left;font-size:1.4em;margin:0 2%}
+.portfolioItem .linkCard p{color:white;display:inline-block;font-size:0.5em}
+.portfolioItem .logo{height:2em;display:inline-block;}
 
 /* Let's get this party started */
 /* .sideScroll::-webkit-scrollbar {height:10%;} */
@@ -125,6 +129,22 @@ background: #06AFE3;
 
 /* NON-PHONE */
 @media only screen and (min-width: 450px){
+.portfolioItem{height:85%}
+.resume{overflow:hidden;}
 .resume iframe{width:100%;max-width:800px;margin:auto;left:0;right:0;height:90%;position:absolute}
 .parallax{background-size:50%}
+/* .portfolioItem .links{border:1px solid black;float:right;width:50%}
+.portfolioItem .linkCard{position:relative;float:right;white-space:nowrap;margin:0 3%;transition:0.25s}
+.portfolioItem .linkCard:hover{transform:scale(1.1);transition:0.25s}
+.portfolioItem .linkCard div p{float:left;font-size:1.4em;margin:0 2%}
+.portfolioItem .linkCard p{color:white;display:inline-block;font-size:0.5em}
+.portfolioItem .logo{height:2em;display:inline-block;} */
+}
+
+@media only screen and (min-width: 900px){
+.portfolioItem{max-width:800px}
+.portfolioItem h2{display:block}
+.portfolioItem .links{width:auto;margin:1%}
+.portfolioItem .linkCard{overflow:auto;width:100%;text-align:right;margin:5% 1%}
+.portfolioItem .logo{width:2em}
 }
