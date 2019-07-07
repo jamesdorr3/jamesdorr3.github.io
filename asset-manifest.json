@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.9b4eb984.chunk.css",
+    "main.css": "/static/css/main.4a81ae7b.chunk.css",
     "main.js": "/static/js/main.96556dad.chunk.js",
     "main.js.map": "/static/js/main.96556dad.chunk.js.map",
     "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
@@ -8,9 +8,9 @@
     "static/js/2.9c8a7bb1.chunk.js": "/static/js/2.9c8a7bb1.chunk.js",
     "static/js/2.9c8a7bb1.chunk.js.map": "/static/js/2.9c8a7bb1.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.42cf34a527f807de5fe846a668ddb031.js": "/precache-manifest.42cf34a527f807de5fe846a668ddb031.js",
+    "precache-manifest.b4d4384a4305868941395d89bc0d3e1d.js": "/precache-manifest.b4d4384a4305868941395d89bc0d3e1d.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.9b4eb984.chunk.css.map": "/static/css/main.9b4eb984.chunk.css.map",
+    "static/css/main.4a81ae7b.chunk.css.map": "/static/css/main.4a81ae7b.chunk.css.map",
     "static/media/index.css": "/static/media/volleyball.0f0422cc.jpeg"
   }
 }
