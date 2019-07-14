@@ -4,7 +4,6 @@ import {NavHashLink as NavLink} from 'react-router-hash-link'
 export class Navbar extends Component {
 
   componentDidMount(){
-    console.log('MOUNTED')
     window.addEventListener('scroll', e => {
       console.log('scroll')
     })
