@@ -30,7 +30,7 @@ h1{margin:1%}
 
 /* ENTRANCE */
 .fullNameContainer{position:fixed;height:50%;width:100%;background:white;font-size:2em;z-index:1}
-.fullNameContainer .full{background:white;position:absolute;bottom:10%;left:5%;width:200%;font-size:0.9em}
+.fullNameContainer .full{background:transparent;position:absolute;bottom:10%;left:5%;width:200%;font-size:0.9em}
 .fullNameContainer .full .name{position:relative;margin-right:0.25%;background:none}
 .fullNameContainer .full .name span{color:#06AFE3;background:none}
 .fullNameContainer .full .first{left:100%;animation: slide 1s ease 0.5s forwards}
@@ -54,10 +54,10 @@ h1{margin:1%}
 @keyframes shrink{to{font-size:0px;display:none}}
 
 .fullNameContainer .full{animation:shrinkHeaderName 1s ease 4.5s forwards;}
-.fullNameContainer{animation:shrinkHeader 2s ease 5s forwards}
+.fullNameContainer{animation:shrinkHeader 2s ease 4s forwards}
 
 @keyframes shrinkHeader{
-  25%{background:transparent}
+  50%{background:transparent;height:50%;width:100%}
   100%{height:5%;width:20%;background:transparent;z-index:1;top:-3px}
 }
 @keyframes shrinkHeaderName{to{width:90%;background:transparent;}}

@@ -8,7 +8,7 @@ export const About = () => {
       <h3>Professional</h3>
       <div className='parallax coach' />
       <p>
-        I have always loved languages. After graduating from Washington State University with my Master of Arts in Education, I worked as a Fitness Coordinator and volleyball coach for one year, and then started a career teaching English as a foreign language.
+        I have always loved languages. After graduating from Washington State University with my MA in Education: Psychology, I worked as a Fitness Coordinator and volleyball coach for one year, and then started a career teaching English as a foreign language.
       </p>
       <p>
         This took me all over China and Mexico, with short stops in many other locations while working remotely. I love traveling and learning the languages, cuisines, and cultures of the world. I respect each culture deeply, which has helped me learn to speak Spanish and Mandarin Chinese. 

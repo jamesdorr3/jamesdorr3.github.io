@@ -14,7 +14,7 @@ const handleClick = () => {
 export const Footer = () => {
   return(
     <>
-      <div onClick={handleClick} innerRef='fullNameContainer' className='fullNameContainer'>
+      <div innerRef='fullNameContainer' className='fullNameContainer'>
         <div className='full name'>
           <span className='first name'>
             <span className='firstLetter'>J</span>
