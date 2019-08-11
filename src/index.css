@@ -80,7 +80,7 @@ p a{color:white}
 .resume:after{content:'';position:absolute;width:100%;height:50px;background-image:linear-gradient(transparent,white);bottom:99.5%} */
 /* .resume:before{content:'';width:100%;position:absolute;height: 0;border-style: solid;border-width: 0 0 200px 200px;border-color: transparent transparent white transparent;} */
 /* .resume .transition{background:gray;content:'';height:30px;position:relative} */
-.resume iframe{width:145%;left:-23%;right:-24%;height:90%;position:relative;border:none;margin:none}
+.resume iframe{width:145%;left:-23%;right:-24%;height:90%;max-height:90%;position:relative;border:none;margin:none}
 div.socialMedia{text-align:center}
 .contact a img{position:relative;height:100px;margin:3%}
 
@@ -131,22 +131,23 @@ background: #06AFE3;
 
 /* NON-PHONE */
 @media only screen and (min-width: 450px){
-.portfolioItem{height:85%}
-.resume{overflow:hidden;}
-.resume iframe{width:100%;max-width:800px;margin:auto;left:0;right:0;height:90%;position:absolute}
-.parallax{background-size:50%}
-/* .portfolioItem .links{border:1px solid black;float:right;width:50%}
-.portfolioItem .linkCard{position:relative;float:right;white-space:nowrap;margin:0 3%;transition:0.25s}
-.portfolioItem .linkCard:hover{transform:scale(1.1);transition:0.25s}
-.portfolioItem .linkCard div p{float:left;font-size:1.4em;margin:0 2%}
-.portfolioItem .linkCard p{color:white;display:inline-block;font-size:0.5em}
-.portfolioItem .logo{height:2em;display:inline-block;} */
+  .portfolioItem{height:85%}
+  .resume{overflow:hidden;}
+  .resume iframe{width:100%;max-width:800px;margin:auto;left:0;right:0;height:90%;position:absolute}
+  .parallax{background-size:50%}
+  /* .portfolioItem .links{border:1px solid black;float:right;width:50%}
+  .portfolioItem .linkCard{position:relative;float:right;white-space:nowrap;margin:0 3%;transition:0.25s}
+  .portfolioItem .linkCard:hover{transform:scale(1.1);transition:0.25s}
+  .portfolioItem .linkCard div p{float:left;font-size:1.4em;margin:0 2%}
+  .portfolioItem .linkCard p{color:white;display:inline-block;font-size:0.5em}
+  .portfolioItem .logo{height:2em;display:inline-block;} */
 }
 
 @media only screen and (min-width: 900px){
-.portfolioItem{max-width:800px}
-.portfolioItem h2{display:block}
-.portfolioItem .links{width:auto;margin:1%}
-.portfolioItem .linkCard{overflow:auto;width:100%;text-align:right;margin:5% 1%}
-.portfolioItem .logo{width:2em}
+  .portfolioItem{max-width:800px}
+  .portfolioItem h2{display:block}
+  .portfolioItem .links{width:auto;margin:1%}
+  .portfolioItem .linkCard{overflow:auto;width:100%;text-align:right;margin:5% 1%}
+  .portfolioItem .logo{width:2em}
+  .chongqing{background-image:url("./chongqing-big.png")}
 }

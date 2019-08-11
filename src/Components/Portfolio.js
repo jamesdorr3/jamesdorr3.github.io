@@ -7,7 +7,7 @@ export const Portfolio = () => {
       name: 'HAM',
       youtube: 'https://www.youtube.com/embed/UA1FnsuSpDs',
       github: 'https://github.com/jamesdorr3/frontend-ham',
-      heroku: 'https://hamon.herokuapp.com/',
+      heroku: 'https://jamesdorr3.github.io/ham/',
       description: 'A macronutrient tracker to be edited easily and show in-depth information on one page',
       bullets: [
         "Ruby on Rails, RESTful routes, and PostgreSQL to simplify backend relationships and API calls",
