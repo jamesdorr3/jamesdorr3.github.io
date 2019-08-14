@@ -33,38 +33,119 @@ h1{margin:1%}
 .fullNameContainer .full{background:transparent;position:absolute;bottom:10%;left:5%;width:200%;font-size:0.9em}
 .fullNameContainer .full .name{position:relative;margin-right:0.25%;background:none}
 .fullNameContainer .full .name span{color:#06AFE3;background:none}
-.fullNameContainer .full .first{left:100%;animation: slide 1s ease 0.5s forwards}
-.fullNameContainer .full .middle{left:90%;animation: slide 1s ease 1s forwards}
-.fullNameContainer .full .last{left:70%;animation:slide 1s ease 1.5s forwards}
-.fullNameContainer .full .suffix{left:60%;animation:slide 1s ease 2s forwards}
+.fullNameContainer .full .first{left:100%;
+  -webkit-animation: slide 1s ease 0.5s forwards;
+  -moz-animation: slide 1s ease 0.5s forwards;
+  -o-animation: slide 1s ease 0.5s forwards;
+  -ms-animation: slide 1s ease 0.5s forwards;
+  animation: slide 1s ease 0.5s forwards}
+.fullNameContainer .full .middle{left:90%;
+  -webkit-animation: slide 1s ease 1s forwards;
+  -moz-animation: slide 1s ease 1s forwards;
+  -o-animation: slide 1s ease 1s forwards;
+  -ms-animation: slide 1s ease 1s forwards;
+  animation: slide 1s ease 1s forwards}
+.fullNameContainer .full .last{left:70%;
+  -webkit-animation: slide 1s ease 1.5s forwards;
+  -moz-animation: slide 1s ease 1.5s forwards;
+  -o-animation: slide 1s ease 1.5s forwards;
+  -ms-animation: slide 1s ease 1.5s forwards;
+  animation:slide 1s ease 1.5s forwards}
+.fullNameContainer .full .suffix{left:60%;
+  -webkit-animation: slide 1s ease 2s forwards;
+  -moz-animation: slide 1s ease 2s forwards;
+  -o-animation: slide 1s ease 2s forwards;
+  -ms-animation: slide 1s ease 2s forwards;
+  animation:slide 1s ease 2s forwards}
 
 .footerContainer{background:#06AFE3;bottom:0;position:fixed;margin:0;width:100%;height:50%;}
 .footerContainer .footer{background:#06AFE3;color:white;width:200%;list-style:none;font-size:1.5em;position:absolute;padding:0;left:5%}
 .footerContainer .footer li{padding:1% 0;position:relative;left:100%;background:none;color:black}
-.footerContainer .footer li.li0{animation: slide 1s ease 0.5s forwards}
-.footerContainer .footer li.li1{animation: slide 1s ease 1s forwards}
-.footerContainer .footer li.li2{animation: slide 1s ease 1.5s forwards}
-.footerContainer .footer li.li3{animation: slide 1s ease 2s forwards}
+.footerContainer .footer li.li0{
+  -webkit-animation: slide 1s ease 0.5s forwards;
+  -moz-animation: slide 1s ease 0.5s forwards;
+  -o-animation: slide 1s ease 0.5s forwards;
+  -ms-animation: slide 1s ease 0.5s forwards;
+  animation: slide 1s ease 0.5s forwards}
+.footerContainer .footer li.li1{
+  -webkit-animation: slide 1s ease 1s forwards;
+  -moz-animation: slide 1s ease 1s forwards;
+  -o-animation: slide 1s ease 1s forwards;
+  -ms-animation: slide 1s ease 1s forwards;
+  animation: slide 1s ease 1s forwards}
+.footerContainer .footer li.li2{
+  -webkit-animation: slide 1s ease 1.5s forwards;
+  -moz-animation: slide 1s ease 1.5s forwards;
+  -o-animation: slide 1s ease 1.5s forwards;
+  -ms-animation: slide 1s ease 1.5s forwards;
+  animation: slide 1s ease 1.5s forwards}
+.footerContainer .footer li.li3{
+  -webkit-animation: slide 1s ease 2s forwards;
+  -moz-animation: slide 1s ease 2s forwards;
+  -o-animation: slide 1s ease 2s forwards;
+  -ms-animation: slide 1s ease 2s forwards;
+  animation: slide 1s ease 2s forwards}
 
-@keyframes hide{from{visibility:hidden}to{visibility:hidden}}
+@-webkit-keyframes hide{from{visibility:hidden}to{visibility:hidden}}
+@-moz-keyframes hide{from{visibility:hidden}to{visibility:hidden}}
+@-ms-keyframes hide{from{visibility:hidden}to{visibility:hidden}}
+@-o-keyframes hide{from{visibility:hidden}to{visibility:hidden}}
+  @keyframes hide{from{visibility:hidden}to{visibility:hidden}}
+@-webkit-keyframes slide{to{left:0%;position:relative}}
+@-moz-keyframes slide{to{left:0%;position:relative}}
+@-ms-keyframes slide{to{left:0%;position:relative}}
+@-o-keyframes slide{to{left:0%;position:relative}}
 @keyframes slide{to{left:0%;position:relative}}
 
-.fullNameContainer .full .rest{animation:shrink 1s ease 4s forwards}
+.fullNameContainer .full .rest{
+  -webkit-animation: shrink 1s ease 4s forwards;
+  -moz-animation: shrink 1s ease 4s forwards;
+  -o-animation: shrink 1s ease 4s forwards;
+  -ms-animation: shrink 1s ease 4s forwards;
+  animation:shrink 1s ease 4s forwards}
 
-@keyframes shrink{to{font-size:0px;display:none}}
+@-webkit-keyframes shrink{to{font-size:0px;display:none}}
+@-moz-keyframes shrink{to{font-size:0px;display:none}}
+@-ms-keyframes shrink{to{font-size:0px;display:none}}
+@-o-keyframes shrink{to{font-size:0px;display:none}}
+  @keyframes shrink{to{font-size:0px;display:none}}
 
-.fullNameContainer .full{animation:shrinkHeaderName 1s ease 4.5s forwards;}
-.fullNameContainer{animation:shrinkHeader 2s ease 4s forwards}
+.fullNameContainer .full{
+  -webkit-animation: shrinkHeaderName 1s ease 4.5s forwards;
+  -moz-animation: shrinkHeaderName 1s ease 4.5s forwards;
+  -o-animation: shrinkHeaderName 1s ease 4.5s forwards;
+  -ms-animation: shrinkHeaderName 1s ease 4.5s forwards;
+  animation:shrinkHeaderName 1s ease 4.5s forwards;}
+.fullNameContainer{
+  -webkit-animation: shrinkHeader 2s ease 4s forwards;
+  -moz-animation: shrinkHeader 2s ease 4s forwards;
+  -o-animation: shrinkHeader 2s ease 4s forwards;
+  -ms-animation: shrinkHeader 2s ease 4s forwards;
+  animation:shrinkHeader 2s ease 4s forwards}
 
-@keyframes shrinkHeader{
-  50%{background:transparent;height:50%;width:100%}
-  100%{height:5%;width:20%;background:transparent;z-index:1;top:-3px}
-}
+@-webkit-keyframes shrinkHeader{50%{background:transparent;height:50%;width:100%}100%{height:5%;width:20%;background:transparent;z-index:1;top:-3px}}
+@-moz-keyframes shrinkHeader{50%{background:transparent;height:50%;width:100%}100%{height:5%;width:20%;background:transparent;z-index:1;top:-3px}}
+@-ms-keyframes shrinkHeader{50%{background:transparent;height:50%;width:100%}100%{height:5%;width:20%;background:transparent;z-index:1;top:-3px}}
+@-o-keyframes shrinkHeader{50%{background:transparent;height:50%;width:100%}100%{height:5%;width:20%;background:transparent;z-index:1;top:-3px}}
+@keyframes shrinkHeader{50%{background:transparent;height:50%;width:100%}100%{height:5%;width:20%;background:transparent;z-index:1;top:-3px}}
+@-webkit-keyframes shrinkHeaderName{to{width:90%;background:transparent;}}
+@-moz-keyframes shrinkHeaderName{to{width:90%;background:transparent;}}
+@-ms-keyframes shrinkHeaderName{to{width:90%;background:transparent;}}
+@-o-keyframes shrinkHeaderName{to{width:90%;background:transparent;}}
 @keyframes shrinkHeaderName{to{width:90%;background:transparent;}}
 
-.footerContainer{animation:shrinkFooterContainer 1s ease 5s forwards}
+.footerContainer{
+  -webkit-animation: shrinkFooterContainer 1s ease 5s forwards;
+  -moz-animation: shrinkFooterContainer 1s ease 5s forwards;
+  -o-animation: shrinkFooterContainer 1s ease 5s forwards;
+  -ms-animation: shrinkFooterContainer 1s ease 5s forwards;
+  animation:shrinkFooterContainer 1s ease 5s forwards}
 
-@keyframes shrinkFooterContainer{to{height:0%}}
+@-webkit-keyframes shrinkFooterContainer{to{height:0%}}
+@-moz-keyframes shrinkFooterContainer{to{height:0%}}
+@-ms-keyframes shrinkFooterContainer{to{height:0%}}
+@-o-keyframes shrinkFooterContainer{to{height:0%}}
+  @keyframes shrinkFooterContainer{to{height:0%}}
 
 /* ENTRANCE */
 
@@ -85,9 +166,9 @@ p a{color:white}
 div.socialMedia{text-align:center}
 .contact a img{position:relative;height:100px;margin:3%}
 
-.sideScroll{height:85%;width:100%;overflow-x:scroll;overflow-y:hidden;position:relative;white-space:nowrap;scroll-snap-type:x mandatory;padding:0;margin:0;bottom:0;}
+.sideScroll{height:85%;width:100%;overflow-x:scroll;overflow-y:hidden;position:relative;white-space:nowrap;-webkit-scroll-snap-type: mandatory;-webkit-scroll-snap-destination: 50% 50%;scroll-snap-type:x mandatory;padding:0;margin:0;bottom:0;}
 .portfolio{position:relative;height:85%;padding-top:1%}
-.portfolioItem{position:relative;display:inline-block;width:90%;height:95%;scroll-snap-align:center;white-space:normal;vertical-align:top;margin:1%;transition:transform .5s;overflow-y:scroll;border:1px solid black;transition:1s;border-radius:5px;padding:1%}
+.portfolioItem{position:relative;display:inline-block;width:90%;height:95%;min-height:90%;-webkit-scroll-snap-coordinate: 50% 50%;scroll-snap-align:center;white-space:normal;vertical-align:top;margin:1%;transition:transform .5s;overflow-y:scroll;border:1px solid black;transition:1s;border-radius:5px;padding:1%}
 .portfolioItem:hover{transform:scale(1.01);border:1px solid white;transition:0.5s}
 
 .portfolioItem h2{display:inline-block;top:0%;margin:3%;}
