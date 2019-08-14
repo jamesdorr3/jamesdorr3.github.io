@@ -156,7 +156,10 @@ p a{color:white}
 .contact{position:relative;height:95%;padding-top:10%}
 .contact p{margin-left:3%;}
 
-.resume{position:relative;height:90%;background:white;color:black;}
+.resume{position:relative;height:auto;background:white;color:black;}
+.resume a{color:#06AFE3}
+.hide-in-resume{grid-template-columns:repeat(3,1fr);position:relative;display:grid;height:0px;overflow:hidden;transition:height 1s;}
+.technical-skills-grid{grid-template-columns:repeat(3,1fr);position:relative;display:grid;height:200px;transition:height 1s;overflow:hidden}
 /* .resume:before{content:'';position:absolute;width:100%;height:50px;background-image:linear-gradient(white,transparent);top:99.5%}
 .resume:after{content:'';position:absolute;width:100%;height:50px;background-image:linear-gradient(transparent,white);bottom:99.5%} */
 /* .resume:before{content:'';width:100%;position:absolute;height: 0;border-style: solid;border-width: 0 0 200px 200px;border-color: transparent transparent white transparent;} */
