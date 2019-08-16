@@ -157,6 +157,7 @@ p a{color:white}
 .contact p{margin-left:3%;}
 
 .resume{position:relative;height:90%;background:white;color:black;}
+.resume a{position:absolute;top:1%;right:1%}
 /* .resume:before{content:'';position:absolute;width:100%;height:50px;background-image:linear-gradient(white,transparent);top:99.5%}
 .resume:after{content:'';position:absolute;width:100%;height:50px;background-image:linear-gradient(transparent,white);bottom:99.5%} */
 /* .resume:before{content:'';width:100%;position:absolute;height: 0;border-style: solid;border-width: 0 0 200px 200px;border-color: transparent transparent white transparent;} */
@@ -173,14 +174,16 @@ div.socialMedia{text-align:center}
 
 .portfolioItem h2{display:inline-block;top:0%;margin:3%;}
 .portfolioItem p{padding:1% 1%;margin:0}
-.portfolioItem iframe{position:relative;width:100%;max-width:600px;height:38%;}
+.portfolioItem .iframe-container{position:relative;width:100%;height:0;padding-bottom:56.25%}
+.portfolioItem iframe{position:absolute;width:100%;max-width:600px;height:100%;}
 
-.portfolioItem .links{float:right;width:50%}
-.portfolioItem .linkCard{position:relative;float:right;white-space:nowrap;margin:0 3%;transition:0.25s}
+.portfolioItem .links{display:grid;grid-template-columns:repeat(1,3fr);width:40%}
+.portfolioItem .linkCard{white-space:nowrap;margin:0 3%;transition:0.25s}
 .portfolioItem .linkCard:hover{transform:scale(1.1);transition:0.25s}
-.portfolioItem .linkCard div p{float:left;font-size:1.4em;margin:0 2%}
-.portfolioItem .linkCard p{color:white;display:inline-block;font-size:0.5em}
-.portfolioItem .logo{height:2em;display:inline-block;}
+.linkcard a div{position:relative;max-width:300px}
+.portfolioItem .linkCard div p{font-size:10px;margin:0 2%;color:white}
+.portfolioItem img.logo{height:1.1em;}
+.portfolioItem a div p.logo{height:1em;color:lime;font-size:20px}
 
 /* Let's get this party started */
 /* .sideScroll::-webkit-scrollbar {height:10%;} */
@@ -213,7 +216,6 @@ background: #06AFE3;
 
 /* NON-PHONE */
 @media only screen and (min-width: 450px){
-  .portfolioItem{height:auto}
   .resume{overflow:hidden;}
   .resume iframe{width:100%;max-width:800px;margin:auto;left:0;right:0;height:90%;position:absolute}
   .parallax{background-size:50%}

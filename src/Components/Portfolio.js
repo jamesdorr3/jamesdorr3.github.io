@@ -5,9 +5,10 @@ export const Portfolio = () => {
   const projects = [
     {
       name: 'HAM',
-      youtube: 'https://www.youtube.com/embed/UA1FnsuSpDs',
-      github: 'https://github.com/jamesdorr3/frontend-ham',
-      heroku: 'https://jamesdorr3.github.io/ham/',
+      video: 'https://www.youtube.com/embed/UA1FnsuSpDs',
+      frontend: 'https://github.com/jamesdorr3/ham',
+      backend: 'https://github.com/jamesdorr3/backend-ham',
+      demo: 'https://jamesdorr3.github.io/ham/',
       description: 'A macronutrient tracker to be edited easily and show in-depth information on one page',
       bullets: [
         "Ruby on Rails, RESTful routes, and PostgreSQL to simplify backend relationships and API calls",
@@ -18,8 +19,9 @@ export const Portfolio = () => {
     },
     {
       name: 'Gravity Maze',
-      youtube: 'https://www.youtube.com/embed/Fs88M2W-uJE',
-      github: 'https://github.com/jamesdorr3/gravity-maze',
+      video: 'https://www.youtube.com/embed/Fs88M2W-uJE',
+      frontend: 'https://github.com/jamesdorr3/gravity-maze',
+      backend: null,
       description: 'A functional concept JavaScript game with shifting gravity',
       bullets: [
         "JavaScript to respond intuitively to input",
@@ -28,9 +30,22 @@ export const Portfolio = () => {
       ]
     },
     {
+      name: 'tIPA',
+      video: null,
+      frontend: 'https://github.com/jamesdorr3/tIPA',
+      backend: null,
+      demo: 'https://jamesdorr3.github.io/tIPA',
+      description: 'A frontend app made to more easily type the International Phonetic Alphabet',
+      bullets: [
+        "Created with React.js to manage 78 possible keys",
+        "Vanilla CSS to accurately reflect my current abilities and help me continue to learn"         
+      ]
+    },
+    {
       name: 'Tournament App',
-      youtube: null,
-      github: 'https://github.com/jamesdorr3/dorrnament_app',
+      video: null,
+      frontend: 'https://github.com/jamesdorr3/dorrnament_app',
+      backend: 'https://github.com/jamesdorr3/dorrnament_app',
       description: 'A Ruby on Rails site for simplifying beach volleyball tournament planning',
       bullets: [
         "SQLite Database for persisting data",
@@ -47,29 +62,42 @@ export const Portfolio = () => {
           <div className='portfolioItem'>
             <h2>{project.name}</h2>
             <div className='links'>
-               <div className='linkCard'>
-                <a href={project.github} target="_blank">
-                  <div>
-                    {/* <p>The code</p> */}
-                    <img src='GitHub-Mark-Light-120px-plus.png' className='logo'/>
-                  </div>
-                  {/* <p> </p> */}
-                </a> 
-              </div>
-              {project.heroku ? 
-                <div className='linkCard'>
-                  <a href={project.heroku} target="_blank">
+              <div className='linkCard'>
+              {project.demo ? 
+                  <a href={project.demo} target="_blank">
                     <div>
-                      <p>Try it!</p>
-                      <img src='heroku.png' className='logo'/>
+                      <img src='game-icon2.png' className='logo'/>
+                      <p>Demo</p>
+                      <p>Host may be slow</p>
                     </div>
-                    <p>Host may be slow</p>
                   </a> 
-                </div>
               : null}
+              </div>
+              <div className='linkCard'>
+              {project.frontend ? 
+                  <a href={project.frontend} target="_blank">
+                    <div>
+                      <p className='logo'>{`</>`}</p>
+                      <p>Frontend</p>
+                    </div>
+                  </a> 
+              : null}
+              </div>
+              <div className='linkCard'>
+              {project.backend ? 
+                  <a href={project.backend} target="_blank">
+                    <div>
+                      <img src='backend-icon.png' className='logo'/>
+                      <p>Backend</p>
+                    </div>
+                  </a> 
+              : null}
+              </div>
             </div>
-            {project.youtube ?
-              <iframe src={project.youtube} frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            {project.video ?
+              <div className='iframe-container'>
+              <iframe src={project.video} frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowfullscreen className='video'></iframe>
+              </div>
               : null
             }
             <p>{project.description}</p>
