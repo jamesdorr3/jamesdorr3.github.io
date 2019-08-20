@@ -21,7 +21,7 @@ export const Portfolio = () => {
       name: 'Gravity Maze',
       video: 'https://www.youtube.com/embed/Fs88M2W-uJE',
       frontend: 'https://github.com/jamesdorr3/gravity-maze',
-      backend: null,
+      backend: 'https://github.com/jamesdorr3/gravity-maze/tree/master/app',
       description: 'A functional concept JavaScript game with shifting gravity',
       bullets: [
         "JavaScript to respond intuitively to input",
