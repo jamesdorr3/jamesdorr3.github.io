@@ -59,51 +59,59 @@ export const Portfolio = () => {
       <h1 className='title'>Portfolio</h1>
       <div className='sideScroll'>
         {projects.map(project => (
-          <div className='portfolioItem'>
-            <h2>{project.name}</h2>
-            <div className='links'>
-              <div className='linkCard'>
-              {project.demo ? 
-                  <a href={project.demo} target="_blank">
-                    <div>
-                      <img src='game-icon2.png' className='logo'/>
-                      <p>Demo</p>
-                      <p>Host may be slow</p>
-                    </div>
-                  </a> 
-              : null}
-              </div>
-              <div className='linkCard'>
-              {project.frontend ? 
-                  <a href={project.frontend} target="_blank">
-                    <div>
-                      <p className='logo'>{`</>`}</p>
-                      <p>Frontend</p>
-                    </div>
-                  </a> 
-              : null}
-              </div>
-              <div className='linkCard'>
-              {project.backend ? 
-                  <a href={project.backend} target="_blank">
-                    <div>
-                      <img src='backend-icon.png' className='logo'/>
-                      <p>Backend</p>
-                    </div>
-                  </a> 
-              : null}
+          <div className='portfolioItem' key={project.name}>
+            <div className='portfolioTopRow'>
+              <h2>{project.name}</h2>
+              <div className='links'>
+                {project.backend ? 
+                <div className='linkCard'>
+                    <a href={project.backend} target="_blank" rel="noopener noreferrer" >
+                      <div>
+                        <div>
+                          <img src='backend-icon.png' className='logo' alt="database icon to show users they can click to read my backend code"/>
+                        </div>
+                        <p>Backend</p>
+                      </div>
+                    </a> 
+                </div>
+                : null}
+                {project.frontend ? 
+                <div className='linkCard'>
+                    <a href={project.frontend} target="_blank" rel="noopener noreferrer" >
+                      <div>
+                        <div>
+                          <p className='logo'>{`</>`}</p>
+                        </div>
+                        <p>Frontend</p>
+                      </div>
+                    </a> 
+                </div>
+                : null}
+                {project.demo ? 
+                <div className='linkCard'>
+                    <a href={project.demo} target="_blank" rel="noopener noreferrer">
+                      <div>
+                        <div>
+                          <img src='game-icon2.png' className='logo' alt="game icon to show users they can try my app" />
+                        </div>
+                        <p>Demo</p>
+                        <p>(slow host)</p>
+                      </div>
+                    </a> 
+                </div>
+                : null}
               </div>
             </div>
             {project.video ?
               <div className='iframe-container'>
-              <iframe src={project.video} frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowfullscreen className='video'></iframe>
+              <iframe src={project.video} title={project.name} frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowFullScreen className='video'></iframe>
               </div>
               : null
             }
             <p>{project.description}</p>
             <ul>
               {project.bullets.map(bullet => (
-                <li>{bullet}</li>
+                <li key={bullet}>{bullet}</li>
               ))}
             </ul>
           </div>
