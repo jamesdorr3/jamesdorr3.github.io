@@ -21,7 +21,7 @@ export const Portfolio = () => {
       name: 'Gravity Maze',
       video: 'https://www.youtube.com/embed/Fs88M2W-uJE',
       frontend: 'https://github.com/jamesdorr3/gravity-maze',
-      backend: null,
+      backend: 'https://github.com/jamesdorr3/gravity-maze/tree/master/app',
       description: 'A functional concept JavaScript game with shifting gravity',
       bullets: [
         "JavaScript to respond intuitively to input",
@@ -44,6 +44,7 @@ export const Portfolio = () => {
     {
       name: 'Tournament App',
       video: null,
+      demo: null,
       frontend: 'https://github.com/jamesdorr3/dorrnament_app',
       backend: 'https://github.com/jamesdorr3/dorrnament_app',
       description: 'A Ruby on Rails site for simplifying beach volleyball tournament planning',
@@ -102,18 +103,22 @@ export const Portfolio = () => {
                 : null}
               </div>
             </div>
-            {project.video ?
-              <div className='iframe-container'>
-              <iframe src={project.video} title={project.name} frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowFullScreen className='video'></iframe>
+            <div className='portfolioItemLower'>
+              {project.video ?
+                <div className='iframe-container'>
+                <iframe src={project.video} title={project.name} frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowFullScreen className='video'></iframe>
+                </div>
+                : null
+              }
+              <div className='portfolioItemDescription'>
+                <p>{project.description}</p>
+                <ul>
+                  {project.bullets.map(bullet => (
+                    <li key={bullet}>{bullet}</li>
+                  ))}
+                </ul>
               </div>
-              : null
-            }
-            <p>{project.description}</p>
-            <ul>
-              {project.bullets.map(bullet => (
-                <li key={bullet}>{bullet}</li>
-              ))}
-            </ul>
+            </div>
           </div>
         ))}
       </div>
