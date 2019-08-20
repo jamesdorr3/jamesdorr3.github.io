@@ -1,5 +1,5 @@
 import React from 'react'
-import ScrollProgressBar from './ScrollProgressBar'
+// import ScrollProgressBar from './ScrollProgressBar'
 
 export const About = () => {
   return(
