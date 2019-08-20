@@ -11,7 +11,7 @@ export class Navbar extends Component {
 
   makeLis = () => {
     return this.props.routes.map(route => (
-      <NavLink smooth to={`/#${route.toLowerCase()}`} className={window.location.hash === `#${route.toLowerCase()}` ? 'active' : null}><span>{route}</span></NavLink>
+      <NavLink smooth key={route} to={`/#${route.toLowerCase()}`} className={window.location.hash === `#${route.toLowerCase()}` ? 'active' : null}><span>{route}</span></NavLink>
     ))
   }
   render(){
