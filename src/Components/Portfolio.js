@@ -95,7 +95,7 @@ export const Portfolio = () => {
                         <div>
                           <img src='game-icon2.png' className='logo' alt="game icon to show users they can try my app" />
                         </div>
-                        <p>Demo</p>
+                        <p>Try it!</p>
                         <p>(slow host)</p>
                       </div>
                     </a> 

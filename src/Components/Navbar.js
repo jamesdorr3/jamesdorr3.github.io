@@ -19,6 +19,7 @@ export class Navbar extends Component {
       <div className='navbar'>
         <div></div>
         {this.makeLis()}
+        <div className="underbar"/>
       </div>
     )
   }
