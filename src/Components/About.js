@@ -14,7 +14,7 @@ export const About = () => {
         This took me all over China and Mexico, with short stops in many other locations while working remotely. I love traveling and learning the languages, cuisines, and cultures of the world. I respect each culture deeply, which has helped me learn to speak Spanish and Mandarin Chinese. 
       </p>
       <p>
-        There is not a large demand for English as a second language teachers within the United States, so I started looking for other career possibilities that allowed me to stay in my home country. I spoke to some close friends about my ideas, and one suggested coding because of my attention to detail. I started taking some online courses, and I found out <strong>I love computer languages as much as human languages.</strong> I researched coding bootcamps, chose Flatiron because their free content was well written and informative, applied, and attended their tuition-deferred Brooklyn campus called Access Labs. 
+        There is not a large demand for English as a second language teachers within the United States, so I started looking for other career possibilities that allowed me to stay in my home country. One friend suggested coding because of my attention to detail. I started taking some online courses, and I found out <strong>I love computer languages as much as human languages.</strong> I researched coding bootcamps, chose Flatiron because their free content was well written and informative, applied, and attended their tuition-deferred Brooklyn campus called Access Labs. 
       </p>
       <p>
         <strong>I'm so happy I decided to learn to code!</strong>
@@ -29,7 +29,7 @@ export const About = () => {
         Both of my parents were volleyball coaches, and I continue to love the sport. I played outside hitter and libero at Limestone College, and I was the volunteer coach with Washington State University for three seasons under Jen Greeny. 
       </p>
       <p>
-        In my spare time, I like to learn - languages, linguistics, cooking, geography, current world affairs, coding, and more information about topics involved in my coding projects. For example, I tried to learn more about nutrition while creating my Flatiron capstone project, the macronutrient tracker <i><a href='https://hamon.herokuapp.com'>HAM</a></i>. And, of course, <strong>I enjoy coding in my spare time!</strong>
+        In my spare time, I like to learn - languages, linguistics, cooking, geography, current world affairs, coding, and more information about topics involved in my coding projects. For example, I tried to learn more about nutrition while creating my Flatiron capstone project, the macronutrient tracker <i><a href='https://hamon.herokuapp.com'>HAM</a></i>. And, of course, I enjoy coding in my spare time!
       </p>
       <div className='parallax volleyball' />
       <p>

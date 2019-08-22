@@ -12,7 +12,7 @@ export const Portfolio = () => {
       description: 'A macronutrient tracker to be edited easily and show in-depth information on one page',
       bullets: [
         "Ruby on Rails, RESTful routes, and PostgreSQL to simplify backend relationships and API calls",
-        "React-Redux for transferring data among components",
+        "React-Redux JavaScript libraries for transferring data among components",
         "USDA API to provide abundant nutritional information and choices",
         "React-Beautiful-DND for responsive drag-and-drop",
       ]
@@ -31,14 +31,15 @@ export const Portfolio = () => {
     },
     {
       name: 'tIPA',
-      video: null,
+      video: "https://www.youtube.com/embed/2gDHJHum9W0",
       frontend: 'https://github.com/jamesdorr3/tIPA',
       backend: null,
       demo: 'https://jamesdorr3.github.io/tIPA',
       description: 'A frontend app made to more easily type the International Phonetic Alphabet',
       bullets: [
         "Created with React.js to manage 78 possible keys",
-        "Vanilla CSS to accurately reflect my current abilities and help me continue to learn"         
+        "Vanilla CSS to help me continue to learn",
+        "Currently supports common symbols for English, Spanish, and Mandarin"       
       ]
     },
     {
@@ -50,7 +51,8 @@ export const Portfolio = () => {
       description: 'A Ruby on Rails site for simplifying beach volleyball tournament planning',
       bullets: [
         "SQLite Database for persisting data",
-        "Ruby on Rails frontend and backend to display data and handle the database"         
+        "Ruby on Rails frontend and backend to display data and handle the database",
+        "RESTful routes to make the MVC easy to follow"
       ]
     },
   ]
