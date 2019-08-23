@@ -14,7 +14,7 @@ code {
 h1{margin:1%}
 h2{color:#06AFE3}
 
-.body{position:absolute;width:100%;overflow-x:hidden;top:3%;height:97%;background:black;color:white}
+.body{position:absolute;width:100%;overflow-x:hidden;top:3%;height:97%;background:white;color:black}
 .navbar{position:fixed;top:0;width:100%;height:5%;display:grid;grid-template-columns:repeat(5,1fr);background:black;z-index:2}
 /* .navbar:after{content:'';position:absolute;width:100%;height:10px;top:100%;background-image:linear-gradient(black,transparent);z-index:1} */
 .navbar{position:fixed;top:0;width:100%;height:5%;display:grid;grid-template-columns:repeat(5,1fr);background-image:linear-gradient(black, black,black,black,transparent);z-index:1}
@@ -157,9 +157,10 @@ h2{color:#06AFE3}
 /* ENTRANCE */
 
 .about{position:relative;padding-top:5%;}
-.about p{text-align:justify}
-.about p,.about h3{margin:5% 3%}
-p a{color:white}
+.about *:not(h1){max-width:700px;margin:20px auto;padding:0px 10px}
+.about p{text-align:justify;line-height:20px;}
+.about p,.about h3{margin:20px auto}
+p a{color:black}
 .contact{position:relative;height:95%;padding-top:10%}
 .contact p{margin-left:3%;}
 
@@ -177,18 +178,20 @@ p a{color:white}
 div.socialMedia{text-align:center}
 .contact a img{position:relative;height:100px;margin:3%}
 
-.sideScroll{height:90%;width:100%;overflow-x:scroll;overflow-y:hidden;position:relative;white-space:nowrap;-webkit-scroll-snap-type: mandatory;-webkit-scroll-snap-destination: 50% 50%;scroll-snap-type:x mandatory;padding:0;margin:0;bottom:0;}
-.portfolio{position:relative;height:90%;padding-top:1%}
-.portfolioItem{position:relative;display:inline-block;border:1px solid white;width:90%;height:96%;min-height:90%;-webkit-scroll-snap-coordinate: 50% 50%;scroll-snap-align:center;white-space:normal;vertical-align:top;margin:1%;transition:transform .5s;overflow-y:scroll;transition:1s;border-radius:5px;padding:1%}
+.portfolio{position:relative;padding-top:1%;height:100%}
+.sideScroll{height:90%;width:100%;overflow-x:scroll;overflow-y:auto;position:relative;white-space:nowrap;-webkit-scroll-snap-type: mandatory;-webkit-scroll-snap-destination: 50% 50%;scroll-snap-type:x mandatory;padding:0;margin:0;bottom:0;}
+.portfolioItem{background:rgb(240, 240, 240);position:relative;display:inline-block;width:90%;height:96%;max-width:800px;-webkit-scroll-snap-coordinate: 50% 50%;scroll-snap-align:center;white-space:normal;vertical-align:top;margin:1%;transition:transform .5s;overflow-y:scroll;transition:1s;border-radius:0px;padding:1%}
 .portfolioItem:hover{transform:scaleX(1.01);transition:0.5s}
 
-.portfolioItem p{padding:1% 1%;margin:0}
-.portfolioItem .iframe-container{position:relative;width:100%;height:0;padding-bottom:56.25%;}
+.portfolioItem p{padding:1% 1%;margin:0;width:95%}
+.portfolioItemDescription{width:95%;margin:auto;margin-top:10px}
+.portfolioItemDescription p, .portfolioItemDescription li{padding:0 0 15px 0;margin:0}
+.portfolioItem .iframe-container{position:relative;width:95%;height:0;padding-bottom:56.25%;margin:auto}
 .portfolioItem iframe{position:absolute;width:100%;height:100%;max-height:500px}
 
 .portfolioTopRow{display:grid;grid-template-columns:1fr 2fr;height:75px}
 .portfolioTopRow h2{padding:0px;margin:10px}
-.linkCard{margin:1px;width:auto;float:right;width:65px;transition:1s;height:60px;border:1px solid white;border-radius:5px}
+.linkCard{margin:1px;width:auto;float:right;width:65px;transition:1s;height:60px;border:1px solid white;background:gray;border-radius:5px}
 .linkCard:hover{transform:scale(1.1);transition:1s}
 .linkCard:hover div p:nth-child(2){color:#06AFE3;transition:0.5s}
 .linkCard a{text-decoration:none}
@@ -234,8 +237,9 @@ background: #06AFE3;
 @media only screen and (min-width: 450px){
   .resume{overflow:hidden;}
   .resume iframe{width:100%;max-width:800px;margin:auto;left:0;right:0;height:90%;position:absolute}
-  .parallax{background-size:50%}
   .portfolioItem{height:90%}
+  .about *:not(h1){margin:20px auto}
+  .about p{line-height:30px;}
   /* .portfolioItem .links{border:1px solid black;float:right;width:50%}
   .portfolioItem .linkCard{position:relative;float:right;white-space:nowrap;margin:0 3%;transition:0.25s}
   .portfolioItem .linkCard:hover{transform:scale(1.1);transition:0.25s}
@@ -244,12 +248,14 @@ background: #06AFE3;
   .portfolioItem .logo{height:2em;display:inline-block;} */
 }
 
+@media only screen and (min-width: 600px){
+  .parallax{background-size:50%}
+}
+
 @media only screen and (min-width: 860px){
 .chongqing{background-image:url("./chongqing-big.png")}
-.portfolioItemLower{display:grid;grid-template-columns:3fr 2fr;}
-.portfolioItemDescription{padding:0 0 0 10px;margin:0}
-.portfolioItemDescription p, .portfolioItemDescription li{padding:0 0 15px 0;margin:0}
-.portfolioItem{overflow:hidden}
-.portfolioItem .iframe-container{position:relative;width:100%;height:0;padding-bottom:56.25%;max-width:600px;}
-.portfolioItem iframe{position:absolute;width:100%;height:100%;max-height:400px}
+/* .portfolioItemLower{display:grid;grid-template-columns:3fr 2fr;} */
+/* .portfolioItem{overflow:hidden} */
+/* .portfolioItem .iframe-container{position:relative;width:100%;height:0;padding-bottom:56.25%;max-width:600px;} */
+/* .portfolioItem iframe{position:absolute;width:100%;height:100%;max-height:400px} */
 }
