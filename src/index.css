@@ -26,7 +26,7 @@ h2{color:#06AFE3}
 /* .navbar a:hover,.navbar a.active:hover{background:linear-gradient(gray,#06AFE3,#06AFE3);transition:1s} */
 /* .navbar a:hover{transition:1s;border-bottom:1px solid #06AFE3;transition:1s} */
 /* .navbar a:hover span{text-shadow: 2px 2px 2px #06AFE3;transition:1s} */
-.underbar{height:0px;background:#06AFE3;top:90%;position:absolute;-webkit-transition:0.5s ease}
+.underbar{height:0px;background:#06AFE3;top:90%;position:absolute;-webkit-transition:0.5s ease;transition:0.5s ease}
 .navbar a:nth-of-type(1):hover ~ .underbar{left:20%;width:20%;background:#06AFE3;height:4px}
 .navbar a:nth-of-type(2):hover ~ .underbar{left:40%;width:20%;background:#06AFE3;height:4px}
 .navbar a:nth-of-type(3):hover ~ .underbar{left:60%;width:20%;background:#06AFE3;height:4px}
@@ -193,7 +193,7 @@ div.socialMedia{text-align:center}
 .portfolioTopRow h2{padding:0px;margin:10px}
 .linkCard{margin:1px;width:auto;float:right;width:65px;transition:1s;height:60px;border:1px solid white;background:gray;border-radius:5px}
 .linkCard:hover{transform:scale(1.1);transition:1s}
-.linkCard:hover div p:nth-child(2){color:#06AFE3;transition:0.5s}
+.linkCard:hover div p:nth-child(2){color:white;transition:0.5s;text-shadow:1px 1px 10px #06AFE3,-1px -1px 10px #06AFE3,-1px 1px 10px #06AFE3,1px -1px 10px #06AFE3}
 .linkCard a{text-decoration:none}
 .linkCard a div{position:relative;max-width:300px}
 .linkCard a div div{display:block;text-align:center;margin:auto;height:25px}
