@@ -164,17 +164,32 @@ p a{color:black}
 .contact{position:relative;height:95%;padding-top:10%}
 .contact p{margin-left:3%;}
 
-.resume{position:relative;height:90%;background:white;color:black;}
+.resume{position:relative;background:white;color:black;}
 
-.resume a{position:absolute;top:1%;right:1%;color:white;transition:0.25s;background:#06AFE3;border-radius:5px;padding:5px;text-decoration:none;border:1px solid #06AFE3}
-.resume a:hover{color:#06AFE3;background:white;transition:0.25s}
+.downloadResumeLink{position:absolute;top:1%;right:1%;color:white;transition:0.25s;background:#06AFE3;border-radius:5px;padding:5px;text-decoration:none;border:1px solid #06AFE3}
+.downloadResumeLink:hover{color:#06AFE3;background:white;transition:0.25s}
 
 /* .resume:before{content:'';position:absolute;width:100%;height:50px;background-image:linear-gradient(white,transparent);top:99.5%}
 .resume:after{content:'';position:absolute;width:100%;height:50px;background-image:linear-gradient(transparent,white);bottom:99.5%} */
 /* .resume:before{content:'';width:100%;position:absolute;height: 0;border-style: solid;border-width: 0 0 200px 200px;border-color: transparent transparent white transparent;} */
 /* .resume .transition{background:gray;content:'';height:30px;position:relative} */
-.iframe-holder{height:95%;position:relative;padding:10px;overflow-y:scroll}
+.iframe-holder{position:relative;padding:10px;overflow-y:scroll}
 .resume iframe{width:145%;left:-23%;right:-24%;height:1px;min-height:90%;max-height:90%;position:relative;border:none;margin:none}
+
+.resume-holder{position:relative;padding:0px;overflow:auto;max-width:600px;margin:auto}
+.resume-holder h1,.resume-holder .contactInfo{text-align:center}
+/* .resume-holder .contactInfo span{margin-left:5px;} */
+.resume-holder .contactInfo span:not(:last-child):after{content:' | ';font-size:20px}
+.resume-holder p{text-align:justify}
+.personalStatement{font-size:14px}
+.technicalSkillsGrid{display:grid;grid-template-columns:repeat(3,1fr);padding:0px;margin:0px}
+.technicalSkillsGrid p{font-weight:bold;padding:10px 0;margin:0px}
+.technicalSkillsGrid ul{padding:0 0 0 20px;margin:0px}
+.employmentCompany,.employmentTitle{padding:0;margin:0}
+.resume-holder ul{margin:10px 0 20px}
+.school{margin:0}
+.degree{margin:0}
+
 div.socialMedia{text-align:center}
 .contact a img{position:relative;height:100px;margin:3%}
 
