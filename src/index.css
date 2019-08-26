@@ -158,7 +158,7 @@ h2{color:#06AFE3}
 
 .about{position:relative;padding-top:5%;}
 .about *:not(h1){max-width:600px;margin:20px auto;padding:0px 10px}
-.about p{text-align:justify;line-height:20px;}
+.about p{text-align:justify;line-height:20px;width:95%}
 .about p,.about h3{margin:20px auto}
 p a{color:black}
 .contact{position:relative;height:95%;padding-top:10%}
@@ -176,7 +176,7 @@ p a{color:black}
 .iframe-holder{position:relative;padding:10px;overflow-y:scroll}
 .resume iframe{width:145%;left:-23%;right:-24%;height:1px;min-height:90%;max-height:90%;position:relative;border:none;margin:none}
 
-.resume-holder{position:relative;padding:0px;overflow:auto;max-width:600px;margin:auto}
+.resume-holder{width:95%;position:relative;padding:0px;overflow:auto;max-width:600px;margin:auto}
 .resume-holder h1,.resume-holder .contactInfo{text-align:center}
 /* .resume-holder .contactInfo span{margin-left:5px;} */
 .resume-holder .contactInfo span:not(:last-child):after{content:' | ';font-size:20px}
@@ -193,11 +193,11 @@ p a{color:black}
 div.socialMedia{text-align:center}
 .contact a img{position:relative;height:100px;margin:3%}
 
-.portfolio{position:relative;padding-top:1%;}
+.portfolio{position:relative;padding:1%;}
 /* .sideScroll{background: lime;width:100%;overflow:auto;position:relative;white-space:nowrap;-webkit-scroll-snap-type: mandatory;-webkit-scroll-snap-destination: 50% 50%;scroll-snap-type:x mandatory;padding:0;margin:0;bottom:0;} */
-.portfolioItemContainer{width:auto;overflow:auto;position:relative;white-space:wrap;padding:0%;margin:0%;text-align:center}
+.portfolioItemContainer{width:auto;overflow:auto;position:relative;white-space:wrap;padding:15px 0;margin:0%;text-align:center}
 /* .portfolioItem{background:rgb(240, 240, 240);position:relative;float:left;width:90%;height:96%;max-width:600px;-webkit-scroll-snap-coordinate: 50% 50%;scroll-snap-align:center;white-space:normal;vertical-align:top;margin:1% auto;transition:transform .5s;overflow-y:scroll;transition:1s;border-radius:0px;padding:1%;} */
-.portfolioItem{text-align:left;display:inline-block;background:rgb(240, 240, 240);position:relative;width:95%;max-width:600px;white-space:auto;vertical-align:top;margin:1%;transition:transform .5s;overflow-y:scroll;transition:1s;border-radius:0px;padding:0%;}
+.portfolioItem{text-align:left;display:inline-block;background:rgb(240, 240, 240);position:relative;width:95%;max-width:600px;white-space:auto;vertical-align:top;margin:1%;transition:transform .5s;overflow-y:scroll;transition:1s;border-radius:0px;padding:0%;box-shadow:15px 15px 15px lightgray}
 .portfolioItem:hover{transform:scaleX(1.01);transition:0.5s}
 
 .portfolioItem p{padding:1% 1%;margin:0;width:95%}
