@@ -60,7 +60,7 @@ export const Portfolio = () => {
   return(
     <div className='portfolio' id='portfolio'>
       <h1 className='title'>Portfolio</h1>
-      <div className='sideScroll'>
+      <div className='portfolioItemContainer'>
         {projects.map(project => (
           <div className='portfolioItem' key={project.name}>
             <div className='portfolioTopRow'>
