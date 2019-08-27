@@ -5,7 +5,7 @@ export const About = () => {
   return(
     <div className='about' id='about'>
       <h1>About</h1>
-      <h3>Professional</h3>
+      <h2>Professional</h2>
       <div className='parallax coach' />
       <p>
         I have always loved languages. After graduating from Washington State University with my MA in Education: Psychology, I worked as a Fitness Coordinator and volleyball coach for one year, and then started a career teaching English as a foreign language.
@@ -24,7 +24,7 @@ export const About = () => {
       </p>
       <p>As a recent graduate of Flatiron, I am currently looking for a company that will utilize my hard work, dedication, quick learning, and attention to detail.</p>
       <div className='parallax chongqing' />
-      <h3>Personal Life</h3>
+      <h2>Personal Life</h2>
       <p>
         Both of my parents were volleyball coaches, and I continue to love the sport. I played outside hitter and libero at Limestone College, and I was the volunteer coach with Washington State University for three seasons under Jen Greeny. 
       </p>
