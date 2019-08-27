@@ -16,37 +16,43 @@ export const Resume = () => {
           <span><a href='https://medium.com/@jamesdorr3'>Medium</a></span>
         </div>
         <p className='personalStatement'>Full stack web developer with a passion for learning, self-actualization, and making the world a better place. With experience in Ruby on Rails, JavaScript, and React, and a background in psychology and teaching English, I discovered web development through learning human languages. I bring strong skills in problem-solving and planning that help socially responsible companies set clear goals, maximize productivity, and achieve those goals. “Whether you think you can or think you cannot, you’re right.”</p>
-        <h2>Technical Skills</h2>
-        <hr/>
-        <div className='technicalSkillsGrid'>
-        <div className='showHide'>
-            <span></span>
-            <span></span>
-            <input type='checkbox'/>
-          </div>
-          <div>
-          <p>Front End</p>
-          <ul>
-            <li>JavaScript</li>
-            <li>React</li>
-            <li>Redux</li>
-          </ul>
-          </div>
-          <div>
-          <p>Back End</p>
-          <ul>
-            <li>Ruby on Rails</li>
-            <li>SQL</li>
-            <li>Sinatra</li>
-          </ul>
-          </div>
-          <div>
-          <p>Libraries</p>
-          <ul>
-            <li>ActionCable WebSocket</li>
-            <li>React-Beautilful-DND</li>
-            <li>P5 Game</li>
-          </ul>
+        <div className='technicalSkills resumeSection'>
+          <h2>Technical Skills</h2>
+          <hr/>
+          {/* <div className='technicalSkillsGrid'> */}
+          <div className='showHide'>
+              {/* <input type='checkbox'/>
+              <div className='drawerArrows'>
+                <span></span>
+                <span></span>
+              </div> */}
+              <div className='technicalSkillsGrid'>
+                <div>
+                <p>Front End</p>
+                <ul>
+                  <li>JavaScript</li>
+                  <li>React</li>
+                  <li>Redux</li>
+                </ul>
+                </div>
+                <div>
+                <p>Back End</p>
+                <ul>
+                  <li>Ruby on Rails</li>
+                  <li>SQL</li>
+                  <li>Sinatra</li>
+                </ul>
+                </div>
+                <div>
+                <p>Libraries</p>
+                <ul>
+                  <li>ActionCable WebSocket</li>
+                  <li>React-Beautilful-DND</li>
+                  <li>P5 Game</li>
+                </ul>
+                </div>
+              </div>
+            {/* </div> */}
           </div>
         </div>
         <h2>Employment History</h2>

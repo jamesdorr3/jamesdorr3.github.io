@@ -130,40 +130,44 @@ h2{color:#06AFE3}
   -ms-animation: shrinkHeader 2s ease 4s forwards;
   animation:shrinkHeader 2s ease 4s forwards}
 
-@-webkit-keyframes shrinkHeader{50%{background:transparent;height:50%;width:100%}100%{height:5%;width:20%;background:transparent;z-index:1;top:-3px}}
-@-moz-keyframes shrinkHeader{50%{background:transparent;height:50%;width:100%}100%{height:5%;width:20%;background:transparent;z-index:1;top:-3px}}
-@-ms-keyframes shrinkHeader{50%{background:transparent;height:50%;width:100%}100%{height:5%;width:20%;background:transparent;z-index:1;top:-3px}}
-@-o-keyframes shrinkHeader{50%{background:transparent;height:50%;width:100%}100%{height:5%;width:20%;background:transparent;z-index:1;top:-3px}}
-@keyframes shrinkHeader{50%{background:transparent;height:50%;width:100%}100%{height:5%;width:20%;background:transparent;z-index:1;top:-3px}}
-@-webkit-keyframes shrinkHeaderName{to{width:90%;background:transparent;}}
-@-moz-keyframes shrinkHeaderName{to{width:90%;background:transparent;}}
-@-ms-keyframes shrinkHeaderName{to{width:90%;background:transparent;}}
-@-o-keyframes shrinkHeaderName{to{width:90%;background:transparent;}}
-@keyframes shrinkHeaderName{to{width:90%;background:transparent;}}
-
-.footerContainer{
-  -webkit-animation: shrinkFooterContainer 1s ease 5s forwards;
-  -moz-animation: shrinkFooterContainer 1s ease 5s forwards;
-  -o-animation: shrinkFooterContainer 1s ease 5s forwards;
+  @-webkit-keyframes shrinkHeader{50%{background:transparent;height:50%;width:100%}100%{height:5%;width:20%;background:transparent;z-index:1;top:-3px}}
+  @-moz-keyframes shrinkHeader{50%{background:transparent;height:50%;width:100%}100%{height:5%;width:20%;background:transparent;z-index:1;top:-3px}}
+  @-ms-keyframes shrinkHeader{50%{background:transparent;height:50%;width:100%}100%{height:5%;width:20%;background:transparent;z-index:1;top:-3px}}
+  @-o-keyframes shrinkHeader{50%{background:transparent;height:50%;width:100%}100%{height:5%;width:20%;background:transparent;z-index:1;top:-3px}}
+  @keyframes shrinkHeader{50%{background:transparent;height:50%;width:100%}100%{height:5%;width:20%;background:transparent;z-index:1;top:-3px}}
+  @-webkit-keyframes shrinkHeaderName{to{width:90%;background:transparent;}}
+  @-moz-keyframes shrinkHeaderName{to{width:90%;background:transparent;}}
+  @-ms-keyframes shrinkHeaderName{to{width:90%;background:transparent;}}
+  @-o-keyframes shrinkHeaderName{to{width:90%;background:transparent;}}
+  @keyframes shrinkHeaderName{to{width:90%;background:transparent;}}
+  
+  .footerContainer{
+    -webkit-animation: shrinkFooterContainer 1s ease 5s forwards;
+    -moz-animation: shrinkFooterContainer 1s ease 5s forwards;
+    -o-animation: shrinkFooterContainer 1s ease 5s forwards;
   -ms-animation: shrinkFooterContainer 1s ease 5s forwards;
   animation:shrinkFooterContainer 1s ease 5s forwards}
-
-@-webkit-keyframes shrinkFooterContainer{to{height:0%}}
-@-moz-keyframes shrinkFooterContainer{to{height:0%}}
-@-ms-keyframes shrinkFooterContainer{to{height:0%}}
-@-o-keyframes shrinkFooterContainer{to{height:0%}}
+  
+  @-webkit-keyframes shrinkFooterContainer{to{height:0%}}
+  @-moz-keyframes shrinkFooterContainer{to{height:0%}}
+  @-ms-keyframes shrinkFooterContainer{to{height:0%}}
+  @-o-keyframes shrinkFooterContainer{to{height:0%}}
   @keyframes shrinkFooterContainer{to{height:0%}}
-
-/* ENTRANCE */
-
-.about{position:relative;padding-top:5%;}
-.about *:not(h1){max-width:600px;margin:20px auto;padding:0px 10px}
-.about p{text-align:justify;line-height:20px;width:95%}
-.about p,.about h3{margin:20px auto}
-p a{color:black}
-.contact{position:relative;height:95%;padding-top:10%}
-.contact p{margin-left:3%;}
-
+  
+  /* ENTRANCE */
+  
+  .about{position:relative;padding-top:5%;}
+  .about *:not(h1){max-width:600px;margin:20px auto;padding:0px 10px}
+  .about p{text-align:justify;line-height:20px;width:95%}
+  .about p,.about h3{margin:20px auto}
+  p a{color:black}
+  .contact{position:relative;height:95%;padding-top:10%}
+  .contact p{margin-left:3%;}
+  div.socialMedia{text-align:center}
+  .contact a img{position:relative;height:100px;margin:3%;}
+  .contactEmail a{display:inline;color:white;transition:0.25s;background:#06AFE3;border-radius:5px;padding:5px;border:1px solid #06AFE3;text-decoration:none}
+  .contactEmail:hover a{color:#06AFE3;background:white;transition:0.25s}
+  
 .resume{position:relative;background:white;color:black;}
 
 .downloadResumeLink{position:absolute;top:1%;right:1%;color:white;transition:0.25s;background:#06AFE3;border-radius:5px;padding:5px;text-decoration:none;border:1px solid #06AFE3}
@@ -182,25 +186,29 @@ p a{color:black}
 .resume-holder .contactInfo span:not(:last-child):after{content:' | ';font-size:20px}
 .resume-holder p{text-align:justify}
 .personalStatement{font-size:14px}
-.technicalSkillsGrid{position:relative;display:grid;grid-template-columns:repeat(3,1fr);padding:0px;margin:0px}
+.technicalSkillsGrid{position:relative;display:grid;grid-template-columns:repeat(3,1fr);padding:0px;margin:0px;overflow:hidden;transition:0.25s}
 .technicalSkillsGrid p{font-weight:bold;padding:10px 0;margin:0px}
 .technicalSkillsGrid ul{padding:0 0 0 20px;margin:0px}
 
-.showHide{position:absolute;right:0px;top:-40px}
-.showHide span{background:black;height:5px;width:30px;display:inline-block;margin:0 -5px;border-radius:25px}
-.showHide span:first-child{transform:rotate(45deg);transition:0.25s}
-.showHide span:nth-child(2){transform:rotate(-45deg);transition:0.5s}
-/* .showHide:hover span:first-child{transform:rotate(-45deg);transition:0.25s}
-.showHide:hover span:nth-child(2){transform:rotate(45deg);transition:0.5s} */
-.showHide input:checked ~ span{background:lime}
+/* .showHide{position:absolute;right:10px;top:-40px} */
+.resumeSection{position:relative}
+.showHide input{opacity:0;position:absolute;height:40px;width:40px;z-index:1;right:0px;top:0px;margin:5px}
+.drawerArrows{position:absolute;right:2.5px;top:5px;margin:5px;transition:0.5s}
+.drawerArrows span{background:black;height:5px;width:30px;display:inline-block;margin:0 -6px;border-radius:25px;}
+.drawerArrows span:nth-child(1){transform:rotate(45deg);transition:0.25s}
+.drawerArrows span:nth-child(2){transform:rotate(-45deg);transition:0.25s}
+.showHide input:checked~ .drawerArrows span:first-child{transform:rotate(-45deg);transition:0.25s}
+.showHide input:checked~ .drawerArrows span:nth-child(2){transform:rotate(45deg);transition:0.25s}
+.showHide input:checked~.technicalSkillsGrid{height:0px;transition:height 0.25s easeout}
+/* .showHide input:checked~ .drawerArrows{transform:rotate(180deg);transition:0.5s} */
+
+.showHide input:checked .technicalSkillsGrid{background:lime}
 
 .employmentCompany,.employmentTitle{padding:0;margin:0}
 .resume-holder ul{margin:10px 0 20px}
 .school{margin:0}
 .degree{margin:0}
 
-div.socialMedia{text-align:center}
-.contact a img{position:relative;height:100px;margin:3%}
 
 .portfolio{position:relative;padding:1%;}
 /* .sideScroll{background: lime;width:100%;overflow:auto;position:relative;white-space:nowrap;-webkit-scroll-snap-type: mandatory;-webkit-scroll-snap-destination: 50% 50%;scroll-snap-type:x mandatory;padding:0;margin:0;bottom:0;} */
