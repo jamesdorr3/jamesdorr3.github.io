@@ -164,9 +164,12 @@ h2{color:#06AFE3}
   .contact{position:relative;height:95%;padding-top:10%}
   .contact p{margin-left:3%;}
   div.socialMedia{text-align:center}
-  .contact a img{position:relative;height:100px;margin:3%;}
-  .contactEmail a{display:inline;color:white;transition:0.25s;background:#06AFE3;border-radius:5px;padding:5px;border:1px solid #06AFE3;text-decoration:none}
+  .contact a{position:relative;height:100px;margin:3%;}
+  .contactEmail a{display:inline;color:white;transition:0.25s;background:#06AFE3;border-radius:5px;padding:5px;border:1px solid #06AFE3;text-decoration:none;margin:0px}
   .contactEmail:hover a{color:#06AFE3;background:white;transition:0.25s}
+  .github,.linkedin,.medium{position:relative;display:inline-block;background-image:url('./GitHub-Mark-120px-plus.png');background-size:100%;background-repeat:none;height:100px;width:100px}
+  .linkedin{background-image:url('./LI-In-Bug.png');width:118px}
+  .medium{background-image:url('./medium-icon.png');}
   
 .resume{position:relative;background:white;color:black;}
 
