@@ -19,6 +19,11 @@ export const Resume = () => {
         <h2>Technical Skills</h2>
         <hr/>
         <div className='technicalSkillsGrid'>
+        <div className='showHide'>
+            <span></span>
+            <span></span>
+            <input type='checkbox'/>
+          </div>
           <div>
           <p>Front End</p>
           <ul>
@@ -26,7 +31,7 @@ export const Resume = () => {
             <li>React</li>
             <li>Redux</li>
           </ul>
-            </div>
+          </div>
           <div>
           <p>Back End</p>
           <ul>
@@ -34,7 +39,7 @@ export const Resume = () => {
             <li>SQL</li>
             <li>Sinatra</li>
           </ul>
-            </div>
+          </div>
           <div>
           <p>Libraries</p>
           <ul>
@@ -42,7 +47,7 @@ export const Resume = () => {
             <li>React-Beautilful-DND</li>
             <li>P5 Game</li>
           </ul>
-            </div>
+          </div>
         </div>
         <h2>Employment History</h2>
         <hr/>

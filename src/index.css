@@ -182,9 +182,18 @@ p a{color:black}
 .resume-holder .contactInfo span:not(:last-child):after{content:' | ';font-size:20px}
 .resume-holder p{text-align:justify}
 .personalStatement{font-size:14px}
-.technicalSkillsGrid{display:grid;grid-template-columns:repeat(3,1fr);padding:0px;margin:0px}
+.technicalSkillsGrid{position:relative;display:grid;grid-template-columns:repeat(3,1fr);padding:0px;margin:0px}
 .technicalSkillsGrid p{font-weight:bold;padding:10px 0;margin:0px}
 .technicalSkillsGrid ul{padding:0 0 0 20px;margin:0px}
+
+.showHide{position:absolute;right:0px;top:-40px}
+.showHide span{background:black;height:5px;width:30px;display:inline-block;margin:0 -5px;border-radius:25px}
+.showHide span:first-child{transform:rotate(45deg);transition:0.25s}
+.showHide span:nth-child(2){transform:rotate(-45deg);transition:0.5s}
+/* .showHide:hover span:first-child{transform:rotate(-45deg);transition:0.25s}
+.showHide:hover span:nth-child(2){transform:rotate(45deg);transition:0.5s} */
+.showHide input:checked ~ span{background:lime}
+
 .employmentCompany,.employmentTitle{padding:0;margin:0}
 .resume-holder ul{margin:10px 0 20px}
 .school{margin:0}
