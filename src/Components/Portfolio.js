@@ -11,10 +11,8 @@ export const Portfolio = () => {
       demo: 'https://jamesdorr3.github.io/ham/',
       description: 'A macronutrient tracker to be edited easily and show in-depth information on one page',
       bullets: [
-        "Ruby on Rails, RESTful routes, and PostgreSQL to simplify backend relationships and API calls",
-        "React-Redux JavaScript libraries for transferring data among components",
-        "USDA API to provide abundant nutritional information and choices",
-        "React-Beautiful-DND for responsive drag-and-drop",
+        "React","Ruby","Rails","RESTful Routes", "PostgreSQL","Redux",
+        "JavaScript","USDA API","React-Beautiful-DND",
       ]
     },
     {
@@ -24,9 +22,7 @@ export const Portfolio = () => {
       backend: 'https://github.com/jamesdorr3/gravity-maze/tree/master/app',
       description: 'A functional concept JavaScript game with shifting gravity',
       bullets: [
-        "JavaScript to respond intuitively to input",
-        "P5 to quicken the coding of visualizations and movement",
-        "Ruby on Rails and PostgreSQL to simplify backend relationships",     
+        "JavaScript","P5 Game","Ruby","Rails","PostgresQL",   
       ]
     },
     {
@@ -35,11 +31,9 @@ export const Portfolio = () => {
       frontend: 'https://github.com/jamesdorr3/tIPA',
       backend: null,
       demo: 'https://jamesdorr3.github.io/tIPA',
-      description: 'A frontend app made to more easily type the International Phonetic Alphabet',
+      description: 'A frontend app made to more easily type the International Phonetic Alphabet, currently supporting English, Spanish, and Mandarin Chinese',
       bullets: [
-        "Created with React.js to manage 78 possible keys",
-        "Vanilla CSS to help me continue to learn",
-        "Currently supports common symbols for English, Spanish, and Mandarin"       
+        "JavaScript","React","CSS","HTML" 
       ]
     },
     {
@@ -50,9 +44,7 @@ export const Portfolio = () => {
       backend: 'https://github.com/jamesdorr3/dorrnament_app',
       description: 'A Ruby on Rails site for simplifying beach volleyball tournament planning',
       bullets: [
-        "SQLite Database for persisting data",
-        "Ruby on Rails frontend and backend to display data and handle the database",
-        "RESTful routes to make the MVC easy to follow"
+        "Ruby","Rails","SQL","SQLite","RESTful Routes","MVC"
       ]
     },
   ]
@@ -116,7 +108,7 @@ export const Portfolio = () => {
                 <p>{project.description}</p>
                 <ul>
                   {project.bullets.map(bullet => (
-                    <li key={bullet}>{bullet}</li>
+                    <li key={bullet} className={bullet.toLowerCase()}>{bullet}</li>
                   ))}
                 </ul>
               </div>
