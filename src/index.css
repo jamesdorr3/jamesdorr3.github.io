@@ -166,8 +166,8 @@ h2{color:#06AFE3}
   div.socialMedia{text-align:center}
   .contact a{position:relative;height:100px;margin:3%;}
   .contactEmail a{display:inline;color:white;transition:0.25s;background:#06AFE3;border-radius:5px;padding:5px;border:1px solid #06AFE3;text-decoration:none;margin:0px}
-  .contactEmail:hover a{color:#06AFE3;background:white;transition:0.25s}
-  .github,.linkedin,.medium{position:relative;display:inline-block;background-image:url('./GitHub-Mark-120px-plus.png');background-size:100%;background-repeat:none;height:100px;width:100px}
+  .contactEmail a:hover{color:#06AFE3;background:white;transition:0.25s}
+  .github,.linkedin,.medium{color:transparent;position:relative;display:inline-block;background-image:url('./GitHub-Mark-120px-plus.png');background-size:100%;background-repeat:none;height:100px;width:100px}
   .linkedin{background-image:url('./LI-In-Bug.png');width:118px}
   .medium{background-image:url('./medium-icon.png');}
   
@@ -222,7 +222,23 @@ h2{color:#06AFE3}
 
 .portfolioItem p{padding:1% 1%;margin:0;width:95%}
 .portfolioItemDescription{width:95%;margin:auto;margin-top:10px;white-space:auto}
-.portfolioItemDescription p, .portfolioItemDescription li{padding:0 0 15px 0;margin:0}
+.portfolioItemDescription p{padding:0;margin:0}
+/* .portfolioItemDescription ul{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr))} */
+.portfolioItemDescription ul{text-align:center;padding:0}
+.portfolioItemDescription li{background-color:white;display:inline-block;border-radius:5px;padding:10px 5px;overflow:hidden;margin: 2px 1%;text-align:center;max-height:20px;width:40%;}
+
+li.react,li.ruby,li.rails,li.postgresql,li.redux,li.javascript,li.css,li.sqlite,li.html,li.sql{background-repeat:no-repeat;color:transparent;background-position:center}
+.react{background-image:url('./logos/react.png');background-size:130px;}
+.ruby{background-image:url('./logos/ruby.png');background-size:110px}
+.rails{background-image:url('./logos/rails.png');background-size:90px}
+.postgresql{background-image:url('./logos/postgres.png');background-size:110px}
+.redux{background-image:url('./logos/redux.png');background-size:130px}
+.javascript{background-image:url('./logos/javascript.png');background-size:110px}
+.css{background-image:url('./logos/css.jpg');background-size:90px}
+.html{background-image:url('./logos/html.jpg');background-size:100px}
+.sql{background-image:url('./logos/sql.jpg');background-size:100px}
+.sqlite{background-image:url('./logos/sqlite.png');background-size:90px}
+
 .portfolioItem .iframe-container{position:relative;width:95%;height:0;padding-bottom:56.25%;margin:auto}
 .portfolioItem iframe{position:absolute;width:100%;height:100%;max-height:500px}
 
@@ -263,9 +279,9 @@ background: #06AFE3;
 } */
 
 .parallax{height:300px;background-attachment:fixed;background-position:center;background-repeat:no-repeat;background-size:100%;}
-.coach{background-image:url("./coach.jpg");}
-.chongqing{background-image:url("./chongqing.png")}
-.volleyball{background-image:url("./volleyball.jpeg")}
+.coach{background-image:url("./parallax/coach.jpg");}
+.chongqing{background-image:url("./parallax/chongqing.png")}
+.volleyball{background-image:url("./parallax/volleyball.jpeg")}
 
 /* .footer{background:lime;width:100%;position:absolute;height:8%;bottom:0;display:grid;grid-template-columns:repeat(4,1fr);padding:0;margin:0}
 .footer li{list-style:none;text-align:center} */
@@ -290,7 +306,7 @@ background: #06AFE3;
 }
 
 @media only screen and (min-width: 860px){
-.chongqing{background-image:url("./chongqing-big.png")}
+.chongqing{background-image:url("./parallax/chongqing-big.png")}
 /* .portfolioItemLower{display:grid;grid-template-columns:3fr 2fr;} */
 /* .portfolioItem{overflow:hidden} */
 /* .portfolioItem .iframe-container{position:relative;width:100%;height:0;padding-bottom:56.25%;max-width:600px;} */

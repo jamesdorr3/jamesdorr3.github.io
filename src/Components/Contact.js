@@ -10,9 +10,9 @@ export const Contact = () => {
         {/* <a href='https://github.com/jamesdorr3' target="_blank" rel="noopener noreferrer"><img alt="logo for GitHub" src='GitHub-Mark-120px-plus.png' className='logo'/></a>
         <a href='https://www.linkedin.com/in/jamesdorr3/' target="_blank" rel="noopener noreferrer"><img alt="logo for LinkedIn" src='LI-In-Bug.png' className='logo'/></a>
         <a href='https://medium.com/@jamesdorr3' target="_blank" rel="noopener noreferrer"><img alt="logo for Medium" src='medium-icon.png' className='logo'/></a> */}
-        <a className='github' href='https://github.com/jamesdorr3' target="_blank" rel="noopener noreferrer"></a>
-        <a className='linkedin' href='https://www.linkedin.com/in/jamesdorr3/' target="_blank" rel="noopener noreferrer"></a>
-        <a className='medium' href='https://medium.com/@jamesdorr3' target="_blank" rel="noopener noreferrer"></a>
+        <a className='github' href='https://github.com/jamesdorr3' target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a className='linkedin' href='https://www.linkedin.com/in/jamesdorr3/' target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a className='medium' href='https://medium.com/@jamesdorr3' target="_blank" rel="noopener noreferrer">Medium</a>
       </div>
     </div>
   )
