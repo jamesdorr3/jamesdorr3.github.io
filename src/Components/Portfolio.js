@@ -22,7 +22,18 @@ export const Portfolio = () => {
       backend: 'https://github.com/jamesdorr3/gravity-maze/tree/master/app',
       description: 'A functional concept JavaScript game with shifting gravity',
       bullets: [
-        "JavaScript","P5 Game","Ruby","Rails","PostgresQL",   
+        "JavaScript","P5 Game","Ruby","Rails","PostgresQL","CSS","HTML","RESTful Routes"
+      ]
+    },
+    {
+      name: 'Bowling Score',
+      demo: "https://jamesdorr3.github.io/bowling",
+      video: 'https://www.youtube.com/embed/UkCWdIX5ArI',
+      frontend: 'https://github.com/jamesdorr3/bowling',
+      backend: null,
+      description: 'A frontend app that scores bowling and guides the player by adjusting focus dynamically',
+      bullets: [
+        "JavaScript","React","CSS","HTML"
       ]
     },
     {
@@ -44,7 +55,7 @@ export const Portfolio = () => {
       backend: 'https://github.com/jamesdorr3/dorrnament_app',
       description: 'A Ruby on Rails site for simplifying beach volleyball tournament planning',
       bullets: [
-        "Ruby","Rails","SQL","SQLite","RESTful Routes","MVC"
+        "Ruby","Rails","SQL","SQLite","RESTful Routes","MVC","CSS","HTML",
       ]
     },
   ]
