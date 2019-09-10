@@ -227,7 +227,7 @@ h2{color:#06AFE3}
 .portfolioItemDescription ul{text-align:center;padding:0}
 .portfolioItemDescription li{background-color:white;display:inline-block;border-radius:5px;padding:10px 5px;overflow:hidden;margin: 2px 1%;text-align:center;max-height:20px;width:40%;}
 
-li.react,li.ruby,li.rails,li.postgresql,li.redux,li.javascript,li.css,li.sqlite,li.html,li.sql{background-repeat:no-repeat;color:transparent;background-position:center}
+li.react,li.ruby,li.rails,li.postgresql,li.redux,li.javascript,li.css,li.sqlite,li.html,li.sql{background-repeat:no-repeat;color:transparent;background-position:center;user-select:none}
 .react{background-image:url('./logos/react.png');background-size:130px;}
 .ruby{background-image:url('./logos/ruby.png');background-size:110px}
 .rails{background-image:url('./logos/rails.png');background-size:90px}
