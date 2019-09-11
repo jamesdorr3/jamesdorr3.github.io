@@ -167,9 +167,10 @@ h2{color:#06AFE3}
   .contact a{position:relative;height:100px;margin:3%;}
   .contactEmail a{display:inline;color:white;transition:0.25s;background:#06AFE3;border-radius:5px;padding:5px;border:1px solid #06AFE3;text-decoration:none;margin:0px}
   .contactEmail a:hover{color:#06AFE3;background:white;transition:0.25s}
-  .github,.linkedin,.medium{color:transparent;position:relative;display:inline-block;background-image:url('./GitHub-Mark-120px-plus.png');background-size:100%;background-repeat:none;height:100px;width:100px}
-  .linkedin{background-image:url('./LI-In-Bug.png');width:118px}
-  .medium{background-image:url('./medium-icon.png');}
+  .github,.linkedin,.medium{color:transparent;position:relative;display:inline-block;background-size:100%;background-repeat:none;height:100px;width:100px}
+  .github{background-image:url('./logos/GitHub-Mark-120px-plus.png')}
+  .linkedin{background-image:url('./logos/LI-In-Bug.png');width:118px}
+  .medium{background-image:url('./logos/medium-icon.png');}
   
 .resume{position:relative;background:white;color:black;}
 
@@ -218,7 +219,7 @@ h2{color:#06AFE3}
 .portfolioItemContainer{width:auto;overflow:auto;position:relative;white-space:wrap;padding:15px 0;margin:0%;text-align:center}
 /* .portfolioItem{background:rgb(240, 240, 240);position:relative;float:left;width:90%;height:96%;max-width:600px;-webkit-scroll-snap-coordinate: 50% 50%;scroll-snap-align:center;white-space:normal;vertical-align:top;margin:1% auto;transition:transform .5s;overflow-y:scroll;transition:1s;border-radius:0px;padding:1%;} */
 .portfolioItem{text-align:left;display:inline-block;background:rgb(240, 240, 240);position:relative;width:95%;max-width:600px;white-space:auto;vertical-align:top;margin:1%;transition:transform .5s;overflow-y:scroll;transition:1s;border-radius:0px;padding:0%;box-shadow:15px 15px 15px lightgray}
-.portfolioItem:hover{transform:scaleX(1.01);transition:0.5s}
+.portfolioItem:hover{transform:scale(1.01);transition:0.5s}
 
 .portfolioItem p{padding:1% 1%;margin:0;width:95%}
 .portfolioItemDescription{width:95%;margin:auto;margin-top:10px;white-space:auto}
@@ -314,6 +315,6 @@ background: #06AFE3;
 }
 
 @media only screen and (min-width:1250px){
-  .portfolioItem{min-height:700px;max-height:700px}
+  .portfolioItem{min-height:730px;max-height:730px}
 
 }
